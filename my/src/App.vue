@@ -3,6 +3,13 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <firstcomponent></firstcomponent>
+    <secondcomponent></secondcomponent>
+
+    <ul>
+      <li><router-link to="/first">click me to first</router-link></li>
+      <li><router-link to="/second">click me to second</router-link></li>
+    </ul>
+    <router-view class="view"></router-view>
   </div>
 </template>
 

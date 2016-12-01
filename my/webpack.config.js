@@ -9,7 +9,15 @@ module.exports = {
     filename: 'build.js'
   },
   module: {
-    rules: [
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',

@@ -2,8 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from "vue-router";
 import VueResource from "vue-resource";
+import Element from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+Vue.use(Element)
 
-Vue.config.debug = true;
+Vue.config.debug = process.env.NODE_ENV !== 'production';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

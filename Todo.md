@@ -32,6 +32,15 @@ Mobile web UI Components based on Vue and WeUI. Be Cool with Vue & WeUI. (https:
 
 - [gitbub](https://github.com/airyland/vux)
 
+## table
+
+### vue-table
+
+data table simplify! -- vuetable is a Vue.js component that will automatically request (JSON) data from the server and display them nicely in html table with swappable/extensible pagination component.
+
+- [gitbub](https://github.com/ratiw/vue-table)
+
+## tree
 示例
 ---
 

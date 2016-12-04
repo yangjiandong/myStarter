@@ -1,6 +1,13 @@
 Vue Starter
 ===
 
+multiple-pages-vue
+---
+
+## multiple pages
+
+- [github](https://github.com/cooking-demo/multiple-pages-vue)
+
 my-vue
 ---
 

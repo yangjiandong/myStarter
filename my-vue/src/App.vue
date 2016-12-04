@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  data() {
+  data(){
     return {
-      message: 'cooking'
+      message: 'cooking, 开始吧'
     };
   }
 };
@@ -16,6 +16,6 @@ export default {
 
 <style lang='css' scoped>
 h1 {
-  color: red;
+  color: blue;
 }
 </style>

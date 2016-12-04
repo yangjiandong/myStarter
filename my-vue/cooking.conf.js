@@ -23,7 +23,7 @@ cooking.set({
     'manifest' // 这个并没有在 entry 里声明的会将所有公用部分打包，也就是 webpack runtime
   ],
   publicPath: '/dist/', // 打包后的资源文件相对于 url 的路径
-  extends: ['vue2', 'lint'] // 安装 cooking-lint 并配置 '.eslintrc' 文件
+  extends: ['vue2'] //, 'lint'] 安装 cooking-lint 并配置 '.eslintrc' 文件
 });
 
 // 生成 webpack 配置并导出

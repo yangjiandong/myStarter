@@ -4,7 +4,7 @@ Vue Starter
 my-vue
 ---
 
-采用 cooking 构建，[参考](https://gold.xitu.io/entry/57d4c2130bd1d00058453ac4)
+## 采用 cooking 构建，[参考](https://gold.xitu.io/entry/57d4c2130bd1d00058453ac4)
 
 ```
 mkdir my-vue
@@ -24,11 +24,26 @@ npm run cooking build -- -p
 需调整 webpack 版本，主要参考 [github](https://github.com/cooking-demo/simple)
 
 continue
-
 ```
 # install vue
 npm i vue@next -S
 ```
+
+## cooknt
+
+对 js 的语法检查还是比较严格
+
+package.json
+```
+"devDependencies":
+"cooking-lint": "^0.1.2",
+```
+cooking.conf.js
+```
+extends: ['vue2'] //, 'lint'] 安装 cooking-lint 并配置 '.eslintrc' 文件
+```
+
+暂时取消
 
 Element
 ---

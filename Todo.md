@@ -1,6 +1,13 @@
 Todo
 ===
 
+12.04
+---
+
+## 找到合适的开发框架
+
+- cooking
+
 2016.12.02
 ---
 
@@ -10,7 +17,7 @@ Todo
 
 - [gitbub](https://github.com/wangxg2016/vue-bulma)
 
-## Element
+## Element ui
 
 饿了吗 web 前端
 
@@ -53,13 +60,12 @@ data table simplify! -- vuetable is a Vue.js component that will automatically r
 
 - [gitbub](https://github.com/shinygang/Vue-cnodejs)
 
-## 基于 vue、vuex、vue-router、echarts 的数据可视化展示平台 tong2-family
+## tong2-family 基于 vue、vuex、vue-router、echarts 的数据可视化展示平台
 
 > 使用 vue2.0、vuex、vue-router2.0、echarts 搭建的一个数据展示平台
 不支持 IE8 及其以下版本，单页面应用
-对华科电信大二学生的做了一些调查，对调查结果进行可视化展示，同时分析了通信 1502 班的群聊记录，得到班级群聊活跃度等信息�
-��
+对华科电信大二学生的做了一些调查，对调查结果进行可视化展示，同时分析了通信 1502 班的群聊记录，得到班级群聊活跃度等信息？
+??
 
 - [github](https://github.com/hieeyh/tong2-family)
-
 

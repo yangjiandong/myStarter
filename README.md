@@ -1,6 +1,12 @@
 Vue Starter
 ===
 
+webstorm
+---
+
+- [参考](http://www.jianshu.com/p/ab778fde3b99)
+- plugin: download/
+
 multiple-pages-vue
 ---
 

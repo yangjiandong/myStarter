@@ -7,6 +7,20 @@ webstorm
 - [参考](http://www.jianshu.com/p/ab778fde3b99)
 - plugin: download/
 
+example
+```
+vue init webapck-simple vue2new
+# create dir vue2new
+```
+
+目录结构对照 Python Web 开发，其实就是：
+```
+|- node_modules/ -> venv/ 虚拟环境
+|- package.json -> requirements.txt
+|- src/main.js -> init.py
+|- src/App.vue -> /templates/base.html
+```
+
 multiple-pages-vue
 ---
 

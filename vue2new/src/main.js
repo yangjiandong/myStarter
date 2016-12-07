@@ -9,8 +9,26 @@ Vue.use(VueResource);
 
 //
 const First = {template: '<div><h2> My is First</h2></div>'};
+import secondcomponent from './components/secondcomponent.vue'
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+//
+const router = new VueRouter({
+    mode: 'history',
+     base: __dirname,
+    routes: [
+        {
+            path: '/first',
+            component: First
+        },
+        {
+            path: '/second',
+            component: secondcomponent
+        }
+    ]
+});
+
+
+const app = new Vue({
+    router: router,
+    render: h => h(App)
+}).$mount('#app');

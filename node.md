@@ -1,6 +1,25 @@
 node
 ===
 
+vue 包说明
+---
+
+## vue-resource
+
+## vue-router
+
+## vuex
+
+## vue-loader
+
+## vue-template-compiler
+
+## Karma
+
+是一个简单的 javascript 测试工具，它允许在多个真正的浏览器执行 JavaScript
+
+
+
 webpack
 ---
 

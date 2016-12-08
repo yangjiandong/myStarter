@@ -1,34 +1,42 @@
 import Vue from 'vue'
-import App from './App.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
+import store from './store'
 
-Vue.config.debug = true;
-Vue.use(VueRouter);
-Vue.use(VueResource);
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.css'
+import Home from './components/Home'
+import Search from './components/Search'
 
-//
-const First = {template: '<div><h2> My is First</h2></div>'};
-import secondcomponent from './components/secondcomponent.vue'
+Vue.use(VueRouter)
+Vue.use(VueResource)
 
-//
-const router = new VueRouter({
-    mode: 'history',
-     base: __dirname,
-    routes: [
-        {
-            path: '/first',
-            component: First
-        },
-        {
-            path: '/second',
-            component: secondcomponent
-        }
-    ]
-});
+const routes = [{
+    path: '/',
+    component: Home,
+    // beforeEnter: (to, from, next) => {
+    //     // ...
+    // }
+},{
+    path: '/home',
+    // redirect: '/',
+    component: Home
+},{
+    path: '/search',
+    // redirect: '/',
+    component: Search
+}]
 
+const router = new VueRouter( {
+    routes
+})
 
-const app = new Vue({
-    router: router,
-    render: h => h(App)
-}).$mount('#app');
+/* eslint-disable no-new */
+new Vue({
+    // el: '#app',
+    router,
+    store,
+    ...App
+}).$mount('#app')
+

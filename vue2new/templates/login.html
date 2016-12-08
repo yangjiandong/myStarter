@@ -1,0 +1,22 @@
+<html>
+<body>
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message|safe }}
+    </div>
+    {% endfor %}
+
+<form method="post">
+Name: <input type="text" name="name">
+Password: <input type="password" name="password">
+<input type="submit">
+</form>
+    {% if req.is_authenticated %}
+<p> You already logged in. {{ req }} </p>
+
+{% endif %}
+</body>
+</html>
+
+

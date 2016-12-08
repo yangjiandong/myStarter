@@ -21,6 +21,12 @@ vue init webapck-simple vue2new
 |- src/App.vue -> /templates/base.html
 ```
 
+vue2new
+---
+
+- [介绍](http://www.jianshu.com/p/fb758398268a)
+- [src](https://code.csdn.net/Kevin_QQ/vue-tutorial/tree/master)
+
 multiple-pages-vue
 ---
 

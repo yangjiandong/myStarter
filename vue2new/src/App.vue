@@ -1,81 +1,42 @@
 <template>
-    <div id="app">
-        <img src="./assets/logo.png">
-        <h1>{{ msg }}</h1>
-        <input type="text" v-model="msg">
-        <firstcomponent></firstcomponent>
-        <!--<secondcomponent></secondcomponent>-->
-        <div id="leftmenu">
-            <ul>
-                <li>
-                    <router-link to="/first">跳转到第一页</router-link>
-                </li>
-                <li>
-                    <router-link to="/second">跳转到第二页</router-link>
-                </li>
-            </ul>
-        </div>
-        <div id="rightcontent">
-            <router-view class="view"></router-view>
-        </div>
-        <div id="bottom">
-            <footercomponent></footercomponent>
-        </div>
+  <div id="app">
+    <div class="container">
+      <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+        <router-link to="/" class="navbar-brand text-success"> 简读</router-link>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <router-link to="/home" class="nav-link"><i class="fa fa-home"></i> Home</router-link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-flag"></i> Hot</a>
+          </li>
+        </ul>
+        <form class="form-inline float-xs-right">
+          <input class="form-control" type="text" placeholder="搜索公众号/文章">
+          <router-link to="/search"><i class="fa fa-search btn btn-outline-success" @click=""></i></router-link>
+          <i class="fa fa-user-o btn btn-outline-success"></i>
+        </form>
+      </nav>
     </div>
+    <div class="container" style="margin-top: 80px">
+      <div class="row">
+        <div class="col-xs-12 col-md-3 col-xl-3 push-md-9 push-xl-9">
+          <sidebar></sidebar>
+        </div>
+        <div class="col-xs-12 col-md-9 col-xl-9 pull-md-3 pull-xl-3">
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-    import firstcomponent from './components/firstcomponent.vue'
-    import secondcomponent from './components/secondcomponent.vue'
-    import footercomponent from './components/footercomponent.vue'
+    import Siderbar from './components/Sidebar.vue'
+
     export default {
-        name: 'app',
-        data () {
-            return {
-                msg: 'Welcome to Vue.js 2.0 quickstart'
-            }
-        },
         components: {
-            firstcomponent, footercomponent, secondcomponent
+            'sidebar': Siderbar
         }
     }
 </script>
-
-<style>
-    #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
-
-    #leftmenu {
-        position: absolute;
-        left: 0;
-        width: 20%;
-
-    }
-
-    #rightcontent {
-        position: absolute;
-        left: 20%;
-        width: 78%;
-    }
-
-    #bottom {
-        left: 5%;
-        position: absolute;
-        width: 90%;
-        top: 95%;
-    }
-
-    h1, h2 {
-        font-weight: normal;
-    }
-
-    a {
-        color: #42b983;
-    }
-</style>

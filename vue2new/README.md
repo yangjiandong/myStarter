@@ -1,6 +1,4 @@
-# vue2new
-
-> A Vue.js project
+# Vue.js 微信公众号阅读器RSS
 
 ## Build Setup
 
@@ -15,4 +13,9 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# Doc:
+- [Vue 2.0 起步(1) 脚手架工具 vue-cli + Webstorm 2016 + webpack](http://www.jianshu.com/p/ab778fde3b99)
+
+- [Vue 2.0 起步(2) 组件及 vue-router实例 - 微信公众号RSS](http://www.jianshu.com/p/63e7f9d61706)
+
+- [Vue 2.0 起步(3) 数据流vuex和LocalStorage实例 - 微信公众号RSS](http://www.jianshu.com/p/fb758398268a)

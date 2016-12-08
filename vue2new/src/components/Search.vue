@@ -1,53 +1,60 @@
 <template>
-    <div class="card">
-        <div class="card-header" align="center">
-            <form class="form-inline" @submit.prevent>
-                <input class="form-control form-control-lg wide" v-model="searchInput" type="text"
-                       @keyup.enter="searchMp(1)" placeholder="搜索公众号">
-                <button type="button" class="btn btn-outline-success btn-lg" :disabled="searchInput==''"
-                        @click="searchMp(1)" ><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <div class="card-block" v-if="!isSearching && !searchResultJson">
-            <h5 align="center" class="text-muted">输入关键字，搜索公众号</h5>
-        </div>
-        <div class="card-block" v-if="searchResultJson">
-            <h6 align="center" class="text-muted">"{{ searchKey}}" 搜索到{{searchResultJson.totalItems}}条结果，共{{searchResultJson.totalPages}}页</h6>
-        </div>
-        <div class="card-block">
-            <div class="media" v-for="(mp,index) in mpList">
-                <div class="media-left imgbox">
-                    <a class="" href="#">
-                        <img class="media-object rounded " :src="mp.image" style="margin-top: 5px;">
-                    </a></div>
-                <div class="media-body">
-                    <a :href="mp.encGzhUrl" target="_blank" class="nav-link"><h5 v-html="mp.name"></h5></a>
-                    <p class="" style="margin-bottom: 0px;"><small> 简介：</small><small v-html="mp.summary"></small></p>
-                    <p class="text-muted" style="margin-bottom: 0px;">
-                        <a href="javascript:" @click="subscribe(index)">
-                            <i class="fa fa-lg float-xs-right"
-                               :class="{'fa-star text-danger': mp.isSubscribed, 'fa-star-o text-muted': !mp.isSubscribed,}"></i></a>
-                        <small title="粉丝" class="s1"><i class="fa fa-heart-o"></i> {{ mp.rank.fans }} </small>
-                        <small title="月平均发表文章" class="s1"><i class="fa fa-file-text-o"></i> {{ mp.rank.pnum }}</small>
-                        <small title="平均阅读次数" class="s1"><i class="fa fa-eye"></i> {{ mp.rank.rnum }}</small>
-                        <small  title="最近更新" class=" s2"> <i class="fa fa-clock-o"></i> {{ mp.date }} </small></p>
-                    <p class="text-muted" style="margin-bottom: 30px;"> <small class="text-muted s1">
-                        <a :href="mp.url" target="_blank" class="nav-link">{{ mp.title1}}</a>
-                        <span v-html="mp.content"></span> </small> </p>
-                </div>
-            </div>
-        </div>
-        <div class="card-block" v-if="isSearching">
-            <h5 align="center"><i class="fa fa-spinner fa-spin fa-lg fa-fw"></i> 正在搜索公众号</h5>
-        </div>
-        <div class="card card-block text-xs-right" v-if="hasNextPage && searchResultJson && !isSearching">
-            <h5 class="btn btn-outline-success btn-block" @click="searchMp(page)"> 下一页 ({{page}})
-                <i class="fa fa-angle-double-right"></i></h5>
-        </div>
-        <div class="card card-block text-xs-right" v-if="!hasNextPage && searchResultJson">
-            <h5 class="btn btn-outline-success btn-block"> 最后一页了 <i class="fa fa-exclamation-triangle "></i></h5>
-        </div>
+  <div class="card">
+    <div class="card-header" align="center">
+      <form class="form-inline" @submit.prevent>
+        <input class="form-control form-control-lg wide" v-model="searchInput" type="text"
+               @keyup.enter="searchMp(1)" placeholder="搜索公众号...">
+        <button type="button" class="btn btn-outline-success btn-lg" :disabled="searchInput==''"
+                @click="searchMp(1)"><i class="fa fa-search"></i></button>
+      </form>
     </div>
+    <div class="card-block" v-if="!isSearching && !searchResultJson">
+      <h5 align="center" class="text-muted">输入关键字，搜索公众号</h5>
+    </div>
+    <div class="card-block" v-if="searchResultJson">
+      <h6 align="center" class="text-muted">"{{ searchKey}}"
+        搜索到{{searchResultJson.totalItems}}条结果，共{{searchResultJson.totalPages}}页</h6>
+    </div>
+    <div class="card-block">
+      <div class="media" v-for="(mp,index) in mpList">
+        <div class="media-left imgbox">
+          <a class="" href="#">
+            <img class="media-object rounded " :src="mp.image" style="margin-top: 5px;">
+          </a></div>
+        <div class="media-body">
+          <a :href="mp.encGzhUrl" target="_blank" class="nav-link"><h5 v-html="mp.name"></h5></a>
+          <p class="" style="margin-bottom: 0px;">
+            <small> 简介：</small>
+            <small v-html="mp.summary"></small>
+          </p>
+          <p class="text-muted" style="margin-bottom: 0px;">
+            <a href="javascript:" @click="subscribe(index)">
+              <i class="fa fa-lg float-xs-right"
+                 :class="{'fa-star text-danger': mp.isSubscribed, 'fa-star-o text-muted': !mp.isSubscribed,}"></i></a>
+            <small title="粉丝" class="s1"><i class="fa fa-heart-o"></i> {{ mp.rank.fans }}</small>
+            <small title="月平均发表文章" class="s1"><i class="fa fa-file-text-o"></i> {{ mp.rank.pnum }}</small>
+            <small title="平均阅读次数" class="s1"><i class="fa fa-eye"></i> {{ mp.rank.rnum }}</small>
+            <small title="最近更新" class=" s2"><i class="fa fa-clock-o"></i> {{ mp.date }}</small>
+          </p>
+          <p class="text-muted" style="margin-bottom: 30px;">
+            <small class="text-muted s1">
+              <a :href="mp.url" target="_blank" class="nav-link">{{ mp.title1}}</a>
+              <span v-html="mp.content"></span></small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-block" v-if="isSearching">
+      <h5 align="center"><i class="fa fa-spinner fa-spin fa-lg fa-fw"></i> 正在搜索公众号</h5>
+    </div>
+    <div class="card card-block text-xs-right" v-if="hasNextPage && searchResultJson && !isSearching">
+      <h5 class="btn btn-outline-success btn-block" @click="searchMp(page)"> 下一页 ({{page}})
+        <i class="fa fa-angle-double-right"></i></h5>
+    </div>
+    <div class="card card-block text-xs-right" v-if="!hasNextPage && searchResultJson">
+      <h5 class="btn btn-outline-success btn-block"> 最后一页了 <i class="fa fa-exclamation-triangle "></i></h5>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -69,6 +76,8 @@
     .s2 {
         margin-left: 20px;
     }
+
+
 </style>
 
 <script>
@@ -192,4 +201,6 @@
             }
         }
     }
+
+
 </script>

@@ -5,15 +5,16 @@
         <router-link to="/" class="navbar-brand text-success"> 简读</router-link>
         <ul class="nav navbar-nav">
           <li class="nav-item">
-            <router-link to="/home" class="nav-link"><i class="fa fa-home"></i> Home</router-link>
+            <router-link to="/home" class="nav-link"><i class="fa fa-home"></i> 首页</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-flag"></i> Hot</a>
+            <a class="nav-link" href="#"><i class="fa fa-flag"></i> 热点</a>
           </li>
         </ul>
         <form class="form-inline float-xs-right">
           <input class="form-control" type="text" placeholder="搜索公众号/文章">
-          <router-link to="/search"><i class="fa fa-search btn btn-outline-success" @click=""></i></router-link>
+          <router-link to="/search"><i class="fa fa-search btn btn-outline-success" @click=""></i>
+          </router-link>
           <i class="fa fa-user-o btn btn-outline-success"></i>
         </form>
       </nav>
@@ -39,4 +40,6 @@
             'sidebar': Siderbar
         }
     }
+
+
 </script>

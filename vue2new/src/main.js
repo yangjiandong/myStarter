@@ -9,8 +9,8 @@ import 'font-awesome/css/font-awesome.css'
 import Home from './components/Home'
 import Search from './components/Search'
 
-Vue.use(VueRouter)
-Vue.use(VueResource)
+Vue.use(VueRouter);
+Vue.use(VueResource);
 
 const routes = [{
     path: '/',
@@ -18,17 +18,15 @@ const routes = [{
     // beforeEnter: (to, from, next) => {
     //     // ...
     // }
-},{
+}, {
     path: '/home',
-    // redirect: '/',
     component: Home
-},{
+}, {
     path: '/search',
-    // redirect: '/',
     component: Search
 }]
 
-const router = new VueRouter( {
+const router = new VueRouter({
     routes
 })
 
@@ -38,5 +36,5 @@ new Vue({
     router,
     store,
     ...App
-}).$mount('#app')
+}).$mount('#app');
 

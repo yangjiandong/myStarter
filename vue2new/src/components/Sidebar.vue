@@ -1,23 +1,23 @@
 <template>
-    <div class="card">
-        <div class="card-header" align="center">
-            <img src="http://avatar.csdn.net/1/E/E/1_kevin_qq.jpg"
-                 class="avatar img-circle img-responsive" />
-            <p><strong> 非梦</strong></p>
-            <p class="card-title">订阅列表</p>
-        </div>
-        <div class="card-block">
-            <p v-for="(mp, idx) in subscribeList" @mouseover="showRemove(idx)" @mouseout="hideRemove(idx)">
-                <small>
-                    <a class="nav-link" :href="mp.encGzhUrl" target="_blank">
-                        <img :src="mp.image" class="mpavatar img-circle img-responsive" /> {{ mp.mpName }} </a>
-                    <a href="javascript:" @click="unsubscribeMp(mp.weixinhao)">
-                        <i class="fa fa-lg float-xs-right text-danger sidebar-remove"
-                           :class="{'fa-minus-circle': mp.showRemoveBtn}"></i></a></small>
-
-            </p>
-        </div>
+  <div class="card">
+    <div class="card-header" align="center">
+      <img src="../assets/logo.png"
+           class="avatar img-circle img-responsive"/>
+      <p><strong> 非梦</strong></p>
+      <p class="card-title">订阅列表</p>
     </div>
+    <div class="card-block">
+      <p v-for="(mp, idx) in subscribeList" @mouseover="showRemove(idx)" @mouseout="hideRemove(idx)">
+        <small>
+          <a class="nav-link" :href="mp.encGzhUrl" target="_blank">
+            <img :src="mp.image" class="mpavatar img-circle img-responsive"/> {{ mp.mpName }} </a>
+          <a href="javascript:" @click="unsubscribeMp(mp.weixinhao)">
+            <i class="fa fa-lg float-xs-right text-danger sidebar-remove"
+               :class="{'fa-minus-circle': mp.showRemoveBtn}"></i></a></small>
+
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,6 +49,7 @@
             }
         }
     }
+
 </script>
 
 <style>
@@ -70,6 +71,7 @@
     .sidebar-remove {
         margin-top: 8px;
     }
+
 
 
 </style>

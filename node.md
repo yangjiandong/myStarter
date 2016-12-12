@@ -18,10 +18,87 @@ vue 包说明
 
 是一个简单的 javascript 测试工具，它允许在多个真正的浏览器执行 JavaScript
 
+## chalk
 
+log tool
+
+## autoprefixer
+
+Autoprefixer解析CSS文件并且添加浏览器前缀到CSS规则里
+
+```
+a{
+     transition :transform 1s
+}
+//Autoprefixer使用一个数据库根据当前浏览器的普及度以及属性支持提供给你前缀
+a{
+     -webkit-transition :-webkit-transform 1s;
+     transition :-ms-transform 1s;
+     transition :transform 1s
+}
+```
+
+## eventsource-polyfill
+
+事件推送
+
+## extract-text-webpack-plugin
+
+希望样式通过`<link>`引入，而不是放在`<style>`标签内
+
+## http-proxy-middleware
+
+前端代理
+
+```
+# 添加配置
+import proxy from 'http-proxy-middleware';
+
+const apiProxy = proxy('/api/v1', {
+    target: 'http://localhost:4000',
+    changeOrigin: true,
+    ws: true
+});
+browserSync({
+  server: {
+    baseDir: 'src',
+
+    middleware: [
+      apiProxy,
+      ...
+    ]
+  }
+})
+```
+
+## semver
+
+它是 语义化版本（Semantic Versioning）规范 的一个实现，目前是由 npm 的团队维护的，实现了版本和版本范围的解析、计算、比较
+
+## opn
+
+Opens stuff like websites, files, executables. Cross-platform.
 
 webpack
 ---
+
+CommonJs是应用在NodeJs，是一种同步的模块机制。它的写法大致如下：
+```
+var firstModule = require("firstModule");
+//your code...
+module.export = anotherModule
+```
+
+AMD的应用场景则是浏览器，异步加载的模块机制。require.js的写法大致如下
+```
+define(['firstModule'], function(module){
+
+    //your code...
+    return anotherModule
+})
+```
+
+其实我们单比较写法，就知道CommonJs是更为优秀的。它是一种同步的写法，对Human友好，而且代码也不会繁琐臃肿。
 
 webpack 是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如 JS（含 JSX）、coffee、样式（含 less/sass）、图片等都作为模块来使用和处理。
 
@@ -29,13 +106,42 @@ webpack 是近期最火的一款模块加载器兼打包工具，它能把各种
 
 其优势主要可以归类为如下几个：
 
-1. webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
+- webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
+- 支持模块加载器和插件机制，可对模块灵活定制。特别是我最爱的babel-loader，有效支持ES6。
+- 能被模块化的不仅仅是 JS 了。
+- 可以通过配置，打包成多个文件。有效利用浏览器的缓存功能提升性能。
+- 将样式文件和图片等静态资源也可视为模块进行打包。配合loader加载器，可以支持sass，less等CSS预处理器。
+- 开发便捷，能替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转 base64 等。
+- 扩展性强，插件机制完善，特别是支持 React 热插拔（见 react-hot-loader ）的功能让人眼前一亮。
+- 内置有source map，即使打包在一起依旧方便调试
 
-2. 能被模块化的不仅仅是 JS 了。
+## CoffeeScript, Sass loader
 
-3. 开发便捷，能替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转 base64 等。
+```
+npm install style-loader css-loader url-loader babel-loader sass-loader file-loader --save-dev
+```
 
-4. 扩展性强，插件机制完善，特别是支持 React 热插拔（见 react-hot-loader ）的功能让人眼前一亮。
+webpack.config.js
+```
+// webpack.config.js
+module.exports = {
+    entry: path.join(__dirname, 'src/entry.js'),
+    output: {
+        path: path.join(__dirname, 'out'),
+        publicPath: "./out/",
+        filename: 'bundle.js'
+    },
+    // 新添加的module属性
+    module: {
+        loaders: [
+            {test: /\.js$/, loader: "babel"},
+            {test: /\.css$/, loader: "style!css"},
+            {test: /\.(jpg|png)$/, loader: "url?limit=8192"},
+            {test: /\.scss$/, loader: "style!css!sass"}
+        ]
+    }
+};
+```
 
 npm
 ---

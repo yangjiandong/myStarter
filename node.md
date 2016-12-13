@@ -156,6 +156,16 @@ npm
 - pm install module-name -save 自动把模块和版本号添加到 dependencies 部分
 - pm install module-name -save-dve 自动把模块和版本号添加到 devdependencies 部
 
+package.json
+---
+
+版本 `^` 表示什么
+
+简单说明
+```
+^1.2.3 := >=1.2.3-0 <2.0.0-0
+```
+
 cooking
 ---
 
@@ -189,6 +199,11 @@ sudo npm install npm@latest -g
 
 ```
 PHANTOMJS_CDNURL=https://npm.taobao.org/dist/phantomjs npm install phantomjs --registry=https://registry.npm.taobao.org --no-proxy
+```
+
+or download (http://cdn.npm.taobao.org/dist/phantomjs/phantomjs-2.1.1-macosx.zip), and link to path(~/bin)
+```
+ln -s ~/workspace/vuejs/phantomjs-2.1.1-macosx/bin/phantomjs ./phantomjs
 ```
 
 ## node-sass

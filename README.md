@@ -82,6 +82,7 @@ Element
 ---
 
 - element
+- 2016.12.13, update element to 1.0.6
 
 Vue2.0 新手完全填坑攻略—从环境搭建到发布
 ---

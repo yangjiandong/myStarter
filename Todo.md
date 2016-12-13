@@ -14,6 +14,8 @@ mobile -> vux
 
 - cooking
 
+暂时还是按 webpack 管理
+
 2016.12.02
 ---
 
@@ -29,6 +31,12 @@ mobile -> vux
 
 - [gitbub](https://github.com/wangxg2016/vue-bulma)
 
+### other bulma
+
+Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
+
+- [github](https://github.com/vue-bulma/vue-admin)
+
 ## webapp
 
 ### 基于 vue.js 重写 Cnodejs.org 社区的 webapp
@@ -42,6 +50,12 @@ mobile -> vux
 对华科电信大二学生的做了一些调查，对调查结果进行可视化展示，同时分析了通信 1502 班的群聊记录，得到班级群聊活跃度等信息？
 
 - [github](https://github.com/hieeyh/tong2-family)
+
+## daza
+
+php 开发的webapi，提供web，android，ios，web前端采用 vue(1.0)
+
+- [daza-frontend](https://github.com/lijy91/daza-frontend)
 
 ## mobile webapp
 

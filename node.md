@@ -24,13 +24,13 @@ log tool
 
 ## autoprefixer
 
-Autoprefixer解析CSS文件并且添加浏览器前缀到CSS规则里
+Autoprefixer 解析 CSS 文件并且添加浏览器前缀到 CSS 规则里
 
 ```
 a{
      transition :transform 1s
 }
-//Autoprefixer使用一个数据库根据当前浏览器的普及度以及属性支持提供给你前缀
+//Autoprefixer 使用一个数据库根据当前浏览器的普及度以及属性支持提供给你前缀
 a{
      -webkit-transition :-webkit-transform 1s;
      transition :-ms-transform 1s;
@@ -82,14 +82,14 @@ Opens stuff like websites, files, executables. Cross-platform.
 webpack
 ---
 
-CommonJs是应用在NodeJs，是一种同步的模块机制。它的写法大致如下：
+CommonJs 是应用在 NodeJs，是一种同步的模块机制。它的写法大致如下：
 ```
 var firstModule = require("firstModule");
 //your code...
 module.export = anotherModule
 ```
 
-AMD的应用场景则是浏览器，异步加载的模块机制。require.js的写法大致如下
+AMD 的应用场景则是浏览器，异步加载的模块机制。require.js 的写法大致如下
 ```
 define(['firstModule'], function(module){
 
@@ -98,7 +98,7 @@ define(['firstModule'], function(module){
 })
 ```
 
-其实我们单比较写法，就知道CommonJs是更为优秀的。它是一种同步的写法，对Human友好，而且代码也不会繁琐臃肿。
+其实我们单比较写法，就知道 CommonJs 是更为优秀的。它是一种同步的写法，对 Human 友好，而且代码也不会繁琐臃肿。
 
 webpack 是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如 JS（含 JSX）、coffee、样式（含 less/sass）、图片等都作为模块来使用和处理。
 
@@ -107,13 +107,13 @@ webpack 是近期最火的一款模块加载器兼打包工具，它能把各种
 其优势主要可以归类为如下几个：
 
 - webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
-- 支持模块加载器和插件机制，可对模块灵活定制。特别是我最爱的babel-loader，有效支持ES6。
+- 支持模块加载器和插件机制，可对模块灵活定制。特别是我最爱的 babel-loader，有效支持 ES6。
 - 能被模块化的不仅仅是 JS 了。
 - 可以通过配置，打包成多个文件。有效利用浏览器的缓存功能提升性能。
-- 将样式文件和图片等静态资源也可视为模块进行打包。配合loader加载器，可以支持sass，less等CSS预处理器。
+- 将样式文件和图片等静态资源也可视为模块进行打包。配合 loader 加载器，可以支持 sass，less 等 CSS 预处理器。
 - 开发便捷，能替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转 base64 等。
 - 扩展性强，插件机制完善，特别是支持 React 热插拔（见 react-hot-loader ）的功能让人眼前一亮。
-- 内置有source map，即使打包在一起依旧方便调试
+- 内置有 source map，即使打包在一起依旧方便调试
 
 ## CoffeeScript, Sass loader
 
@@ -131,7 +131,7 @@ module.exports = {
         publicPath: "./out/",
         filename: 'bundle.js'
     },
-    // 新添加的module属性
+    // 新添加的 module 属性
     module: {
         loaders: [
             {test: /\.js$/, loader: "babel"},
@@ -194,6 +194,14 @@ Upgrading npm
 ```
 sudo npm install npm@latest -g
 ```
+
+## chromedriver
+
+.npmrc
+```
+chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
+```
+
 
 ## phantomjs
 

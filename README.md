@@ -1,25 +1,10 @@
 Vue Starter
 ===
 
-webstorm
+vue-tutorial
 ---
 
-- [参考](http://www.jianshu.com/p/ab778fde3b99)
-- plugin: download/
-
-example
-```
-vue init webapck-simple vue2new
-# create dir vue2new
-```
-
-目录结构对照 Python Web 开发，其实就是：
-```
-|- node_modules/ -> venv/ 虚拟环境
-|- package.json -> requirements.txt
-|- src/main.js -> init.py
-|- src/App.vue -> /templates/base.html
-```
+重写 [vue-tutorail](https://github.com/keepfool/vue-tutorials) 原有基于 1.x
 
 vue2new
 ---
@@ -62,6 +47,26 @@ continue
 npm i vue@next -S
 ```
 
+
+webstorm
+---
+
+- [参考](http://www.jianshu.com/p/ab778fde3b99)
+- plugin: download/
+
+example
+```
+vue init webapck-simple vue2new
+# create dir vue2new
+```
+
+目录结构对照 Python Web 开发，其实就是：
+```
+|- node_modules/ -> venv/ 虚拟环境
+|- package.json -> requirements.txt
+|- src/main.js -> init.py
+|- src/App.vue -> /templates/base.html
+```
 ## cooknt
 
 对 js 的语法检查还是比较严格

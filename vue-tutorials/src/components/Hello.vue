@@ -8,6 +8,23 @@
     <h1 v-if="age >= 25">Age: {{ age }}</h1>
     <h1 v-if="name.indexOf('jack') >= 0">Name: {{ name }}</h1>
 
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="person in people">
+          <td>{{ person.name  }}</td>
+          <td>{{ person.age  }}</td>
+          <td>{{ person.sex  }}</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </template>
 
@@ -20,7 +37,12 @@ export default {
       yes: true,
       no: false,
       age: 28,
-      name: 'keepfool'
+      name: 'keepfool',
+      people: [{
+        name: 'jack',
+        age: 30,
+        sex: 'Male'
+      }]
     }
   }
 }

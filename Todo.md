@@ -43,6 +43,13 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 
 - [gitbub](https://github.com/shinygang/Vue-cnodejs)
 
+    基于 `vue2` ，可参考用于构建 mobile app
+
+用到的 js
+- timeage 时间支持库，比如显示`x小时前`
+- autoprefixer
+- chalk 字符处理 比如显示颜色样式
+
 ### tong2-family 基于 vue、vuex、vue-router、echarts 的数据可视化展示平台
 
 > 使用 vue2.0、vuex、vue-router2.0、echarts 搭建的一个数据展示平台
@@ -50,6 +57,13 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 对华科电信大二学生的做了一些调查，对调查结果进行可视化展示，同时分析了通信 1502 班的群聊记录，得到班级群聊活跃度等信息？
 
 - [github](https://github.com/hieeyh/tong2-family)
+
+### douban
+
+模仿douban，提供后台和前台，前台采用 vue
+
+- [github](https://github.com/jiakeqi/douban)
+
 
 ## daza
 

@@ -7,10 +7,14 @@ import 'element-ui/lib/theme-default/index.css'
 import App from './App'
 import routes from './routes'
 
+import MComponent from './components/myComponent'
+
 // 注意次序
 Vue.use(Element)
 Vue.use(VueRouter)
 Vue.use(VueResource)
+//
+Vue.component('my-component', MComponent)
 
 // 参考 https://github.com/ElemeFE/element-dashboard
 const router = new VueRouter({

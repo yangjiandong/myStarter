@@ -227,3 +227,13 @@ cnpm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
+Q&A
+---
+
+## error in enoent no such file or directory node-sass/vendor
+
+重新安装 node-sass，并且推荐 `cnpm`
+
+```
+cnpm i node-sass
+```

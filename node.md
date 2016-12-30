@@ -188,18 +188,31 @@ sudo PROJECT_NAME="node" PROJECT_URL="https://npm.taobao.org/mirrors/node/" n pr
 备注：升级前后可先使用 node -v 查看版本。查看所有 node 版本是 n ls
 ```
 
-Upgrading npm
----
+## Upgrading npm
 
 ```
 sudo npm install npm@latest -g
 ```
 
-## chromedriver
+npmrc 设置
+---
+
+[在中国，安装 & 升级 npm 依赖的正确方法](https://sebastianblade.com/the-truly-way-to-install-upgrade-npm-dependency-in-china/)
+
+chromedriver
 
 .npmrc
 ```
+registry = https://r.cnpmjs.org
+## https://registry.npm.taobao.org/
 chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
+chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver # chromedriver 二进制包镜像
+
+operadriver_cdnurl http://cdn.npm.taobao.org/dist/operadriver # operadriver 二进制包镜像
+phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs # phantomjs 二进制包镜像
+fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents # fsevents 二进制包
+sass_binary_site http://cdn.npm.taobao.org/dist/node-sass # node-sass 二进制包镜像
+electron_mirror http://cdn.npm.taobao.org/dist/electron/ # electron 二进制包镜像
 ```
 
 
@@ -225,6 +238,27 @@ cnpm
 
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+Cordova 打包
+---
+
+## 打包发布后不显示
+
+app/config/index.js
+```
+assetsPublicPath: '',
+```
+
+app/build/webpack.prod.conf.js
+```
+有可能不需要改
+vue: {
+    loaders: utils.cssLoaders({
+      sourceMap: config.build.productionSourceMap,
+      extract: false
+    })
+  },
 ```
 
 Q&A

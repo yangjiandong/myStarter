@@ -213,6 +213,7 @@ phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs # phantomjs 二进制�
 fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents # fsevents 二进制包
 sass_binary_site http://cdn.npm.taobao.org/dist/node-sass # node-sass 二进制包镜像
 electron_mirror http://cdn.npm.taobao.org/dist/electron/ # electron 二进制包镜像
+ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/
 ```
 
 

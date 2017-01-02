@@ -7,6 +7,34 @@ Todo
 ui -> Element
 mobile -> vux
 
+参考起步项目
+---
+
+## blog
+
+[github](https://github.com/jcc/blog)
+
+Laravel and Vue.js。可以看看，界面
+
+## Admin
+
+### adminLTE
+
+- [gitbub](https://github.com/liujians/vue-adminLte-vue-router)
+
+在原有 adminLTE 的基础上采用了 vue
+
+### vue-bulma
+
+轻量级高性能 MVVM Admin UI 框架
+
+- [gitbub](https://github.com/wangxg2016/vue-bulma)
+
+### 基于 vue.js 重写 Cnodejs.org 社区的 webapp
+
+- [gitbub](https://github.com/shinygang/Vue-cnodejs)
+
+
 12.04
 ---
 
@@ -46,7 +74,7 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
     基于 `vue2` ，可参考用于构建 mobile app
 
 用到的 js
-- timeage 时间支持库，比如显示`x小时前`
+- timeage 时间支持库，比如显示`x 小时前`
 - autoprefixer
 - chalk 字符处理 比如显示颜色样式
 
@@ -60,14 +88,14 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 
 ### douban
 
-模仿douban，提供后台和前台，前台采用 vue
+模仿 douban，提供后台和前台，前台采用 vue
 
 - [github](https://github.com/jiakeqi/douban)
 
 
 ## daza
 
-php 开发的webapi，提供web，android，ios，web前端采用 vue(1.0)
+php 开发的 webapi，提供 web，android，ios，web 前端采用 vue(1.0)
 
 - [daza-frontend](https://github.com/lijy91/daza-frontend)
 

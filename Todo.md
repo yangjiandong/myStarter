@@ -10,6 +10,8 @@ mobile -> vux
 参考起步项目
 ---
 
+# vue
+
 ## blog
 
 [github](https://github.com/jcc/blog)
@@ -20,7 +22,7 @@ Laravel and Vue.js。可以看看，界面
 
 ### adminLTE
 
-- [gitbub](https://github.com/liujians/vue-adminLte-vue-router)
+- [github](https://github.com/liujians/vue-adminLte-vue-router)
 
 在原有 adminLTE 的基础上采用了 vue
 
@@ -28,12 +30,56 @@ Laravel and Vue.js。可以看看，界面
 
 轻量级高性能 MVVM Admin UI 框架
 
-- [gitbub](https://github.com/wangxg2016/vue-bulma)
+- [github](https://github.com/wangxg2016/vue-bulma)
 
 ### 基于 vue.js 重写 Cnodejs.org 社区的 webapp
 
-- [gitbub](https://github.com/shinygang/Vue-cnodejs)
+- [github](https://github.com/shinygang/Vue-cnodejs)
 
+## weixin
+
+### vue-wechat 
+
+[github](https://github.com/useryangtao/vue-wechat)
+
+但采用了 1.0
+
+### vue-weui
+
+[github](https://github.com/adcentury/vue-weui)
+
+但采用了 1.0
+
+# React
+
+## ANT Design
+
+[github](https://github.com/ant-design/ant-design)
+
+## ANT Design Mobile
+
+[github](https://github.com/ant-design/ant-design-mobile)
+
+更新 Vue.js from 1.x to 2.0
+---
+
+项目升级更新详情: https://github.com/liuzhenangel/v2ex_frontend/commit/8bc0a8d87728e9e08f9207ebe0ff6e806cc704f2
+
+第一步, 安装 vue-migration-helper 工具.
+```
+# install
+npm install --global git://github.com/vuejs/vue-migration-helper.git
+
+# navigate to a Vue 1.x project directory
+cd path/to/my-vue-project
+
+# scan all files in the current directory
+vue-migration-helper
+# scan all files in specific sub-directories
+vue-migration-helper src folder-a folder-b
+```
+
+第二步, 根据提示信息修改文件中对应的地方.
 
 12.04
 ---

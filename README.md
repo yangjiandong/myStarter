@@ -1,6 +1,13 @@
 Vue Starter
 ===
 
+lookup port in mac
+---
+
+```
+lsof -n -Pl|grep :8000
+```
+
 vue-tutorial
 ---
 

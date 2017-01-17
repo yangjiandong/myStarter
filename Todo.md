@@ -18,6 +18,28 @@ mobile -> vux
 
 Laravel and Vue.js。可以看看，界面
 
+## ui
+
+### vue-material
+
+[github](https://github.com/marcosmoura/vue-material)
+
+google material 风格
+
+### Element ui
+
+饿了吗 web 前端
+
+A Vue.js 2.0 UI Toolkit for Web (http://element.eleme.io/)
+
+- [gitbub](https://github.com/ElemeFE/element)
+
+### mint-ui
+
+Mobile UI elements for Vue.js http://mint-ui.github.io/#!/en
+
+- [gitbub](https://github.com/ElemeFE/mint-ui/)
+
 ## Admin
 
 ### adminLTE
@@ -150,22 +172,6 @@ php 开发的 webapi，提供 web，android，ios，web 前端采用 vue(1.0)
 ### 重构的卖座网
 
 - [gitbub](https://github.com/zhengguorong/maizuo/tree/master/vuexMaizuo2)
-
-## ui
-
-### Element ui
-
-饿了吗 web 前端
-
-A Vue.js 2.0 UI Toolkit for Web (http://element.eleme.io/)
-
-- [gitbub](https://github.com/ElemeFE/element)
-
-### mint-ui
-
-Mobile UI elements for Vue.js http://mint-ui.github.io/#!/en
-
-- [gitbub](https://github.com/ElemeFE/mint-ui/)
 
 ### vux
 

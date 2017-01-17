@@ -115,6 +115,22 @@ webpack 是近期最火的一款模块加载器兼打包工具，它能把各种
 - 扩展性强，插件机制完善，特别是支持 React 热插拔（见 react-hot-loader ）的功能让人眼前一亮。
 - 内置有 source map，即使打包在一起依旧方便调试
 
+node 下热加载问题
+
+在ebpack.conf.js中写入
+```
+watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+}
+
+```
+
+告诉webpack采用poll的方式监听代码，每1000毫秒检测一次代码有没有发生变化
+
+nodemon解决方法
+在CLI启动时候加上参数--legacy-watch或-L(简写)，即nodemon -L xxx.js，-L表示的是采用poll的方式监听代码变化。webpack.conf.js中写入
+
 ## CoffeeScript, Sass loader
 
 ```

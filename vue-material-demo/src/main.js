@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import VueMaterial from 'vue-material'
+
+import 'material-design-icons/iconfont/material-icons.css'
 import 'vue-material/dist/vue-material.css'
 
 Vue.use(VueMaterial)

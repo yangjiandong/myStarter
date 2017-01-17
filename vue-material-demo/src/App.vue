@@ -22,7 +22,7 @@
 
         <md-list-item>
           <div class="md-list-text-container">
-            <span>John Doe</span>
+            <span>张三</span>
             <span>johndoe@email.com</span>
           </div>
 

@@ -12,5 +12,9 @@ vue-material-demo
 
 ```
 npm install roboto-fontface --save
-npm install material-icons --save
+npm install material-design-icons --save
+npm install sass-loader --save-dev
+npm install node-sass --save-dev
 ```
+
+暂时不采用 `roboto-fontf

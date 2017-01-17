@@ -1,7 +1,7 @@
 vue-tutorials
 ===
 
-参考[vue-tutorials-1.x](https://github.com/keepfool/vue-tutorials)
+参考 [vue-tutorials-1.x](https://github.com/keepfool/vue-tutorials)
 
 part1
 ---
@@ -12,5 +12,6 @@ part1
 
 part2
 ---
+
 
 

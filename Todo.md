@@ -36,9 +36,15 @@ Laravel and Vue.js。可以看看，界面
 
 - [github](https://github.com/shinygang/Vue-cnodejs)
 
+## mobile
+
+### elemnt 饿了么
+
+- [github](https://github.com/liangxiaojuan/eleme)
+
 ## weixin
 
-### vue-wechat 
+### vue-wechat
 
 [github](https://github.com/useryangtao/vue-wechat)
 
@@ -63,9 +69,9 @@ Laravel and Vue.js。可以看看，界面
 更新 Vue.js from 1.x to 2.0
 ---
 
-项目升级更新详情: https://github.com/liuzhenangel/v2ex_frontend/commit/8bc0a8d87728e9e08f9207ebe0ff6e806cc704f2
+项目升级更新详情：https://github.com/liuzhenangel/v2ex_frontend/commit/8bc0a8d87728e9e08f9207ebe0ff6e806cc704f2
 
-第一步, 安装 vue-migration-helper 工具.
+第一步，安装 vue-migration-helper 工具。
 ```
 # install
 npm install --global git://github.com/vuejs/vue-migration-helper.git
@@ -79,7 +85,7 @@ vue-migration-helper
 vue-migration-helper src folder-a folder-b
 ```
 
-第二步, 根据提示信息修改文件中对应的地方.
+第二步，根据提示信息修改文件中对应的地方。
 
 12.04
 ---

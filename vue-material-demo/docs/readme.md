@@ -6,6 +6,15 @@ vue-material-demo
 
 ## [demo](http://codepen.io/vue-material/pen/WoZpMR)
 
+use [material ui](https://github.com/marcosmoura/vue-material)
+
+```
+vue init webpack vue-material-demo
+cd vue-material-demo
+npm install
+npm run dev
+```
+
 `http://localhost:8000`
 
 ## roboto-and-material-icons-fonts 本地化问题

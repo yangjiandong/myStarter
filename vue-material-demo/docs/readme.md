@@ -17,4 +17,4 @@ npm install sass-loader --save-dev
 npm install node-sass --save-dev
 ```
 
-暂时不采用 `roboto-fontf
+暂时不采用 `roboto-fontface` 字体有的虚

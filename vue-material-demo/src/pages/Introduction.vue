@@ -4,7 +4,7 @@
       <div class="introduction">
         <div class="button-actions">
           <div class="example">
-            <img src="assets/vue-material-example.png" alt="Material Design">
+            <img src="static/vue-material-example.png" alt="Material Design">
           </div>
 
           <div class="introduction">Build well-crafted apps with Material Design and Vue 2</div>

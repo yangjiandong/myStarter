@@ -13,6 +13,8 @@ git tag 2.0
 git push origin --tags
 ```
 
+## move src/asserts/files to /static
+
 2017.01.17
 ---
 

@@ -179,7 +179,6 @@
         </md-list>
       </div>
 
-      <release-version></release-version>
     </md-sidenav>
 
     <transition name="md-router" appear>
@@ -393,10 +392,10 @@
         let theme = Vue.material.currentTheme;
 
         if (theme) {
-          return `assets/logo-vue-material-${theme}.png`;
+          return `static/logo-vue-material-${theme}.png`;
         }
 
-        return 'assets/logo-vue-material-default.png';
+        return 'static/logo-vue-material-default.png';
       }
     },
     methods: {

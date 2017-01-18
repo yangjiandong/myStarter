@@ -1,6 +1,8 @@
 vue tips
 ===
 
+[参考](https://gold.xitu.io/entry/5775d1b76be3ff006af364a7)
+
 指令keep-alive
 ---
 

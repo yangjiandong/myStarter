@@ -30,7 +30,7 @@ let router = new VueRouter({
   routes
 });
 
-let Main = Vue.component('app', App);
+let Docs = Vue.component('app', App);
 let handleSectionTheme = (currentRoute) => {
   let theme = 'default';
   let name = currentRoute.name;
@@ -54,7 +54,7 @@ let handleSectionTheme = (currentRoute) => {
   Vue.material.setCurrentTheme(theme);
 };
 
-Main = new Main({
+Docs = new Docs({
   el: '#app',
   router
 });
@@ -69,7 +69,7 @@ router.beforeEach((to, from, next) => {
       mainContent.scrollTop = 0;
     }
 
-    Main.closeSidenav();
+    Docs.closeSidenav();
 
     next();
   });

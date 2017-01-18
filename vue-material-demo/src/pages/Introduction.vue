@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Introduction">
+  <page-content page-title="简介">
     <div class="main-content">
       <div class="introduction">
         <div class="button-actions">
@@ -7,10 +7,9 @@
             <img src="static/vue-material-example.png" alt="Material Design">
           </div>
 
-          <div class="introduction">Build well-crafted apps with Material Design and Vue 2</div>
+          <div class="introduction">采用 Material Design and Vue 2 构建前端</div>
 
-          <md-button class="md-primary md-raised" href="#/getting-started">Getting Started</md-button>
-          <md-button class="md-primary md-raised" href="https://github.com/marcosmoura/vue-material" target="_blank" rel="noopener">Github</md-button>
+          <md-button class="md-primary md-raised" href="#/getting-started">起步</md-button>
         </div>
 
         <div class="row">

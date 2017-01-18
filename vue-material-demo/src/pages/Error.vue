@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Error">
+  <page-content page-title="出错啦">
     <div class="main-content">
       <section>
         <h2 class="md-headline">Hmmm. Too bad</h2>

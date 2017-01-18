@@ -4,18 +4,18 @@
       <md-toolbar class="vue-material-logo" md-theme="white">
         <router-link exact to="/">
           <img :src="logo" alt="Vue">
-          <span>Vue Material</span>
+          <span>Vue Material 示例</span>
         </router-link>
       </md-toolbar>
 
       <div class="main-sidebar-links">
         <md-list class="md-dense">
           <md-list-item>
-            <router-link exact to="/">Introduction</router-link>
+            <router-link exact to="/">简介</router-link>
           </md-list-item>
 
           <md-list-item>
-            <router-link exact to="/getting-started">Getting Started</router-link>
+            <router-link exact to="/getting-started">起步</router-link>
           </md-list-item>
 
           <md-list-item>
@@ -174,7 +174,7 @@
           </md-list-item>
 
           <md-list-item>
-            <router-link exact to="/about">About</router-link>
+            <router-link exact to="/about">关于</router-link>
           </md-list-item>
         </md-list>
       </div>

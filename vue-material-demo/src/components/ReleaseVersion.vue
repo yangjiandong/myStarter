@@ -1,7 +1,7 @@
 <template>
   <div class="release-version">
     <div v-if="availableDocs.length > 1">
-      <span>Version:</span>
+      <span>版本:</span>
       <md-select id="docs-select" v-model="currentDocs" @change="changeDocs">
         <md-option v-for="doc in availableDocs" :value="doc">{{ doc }}</md-option>
       </md-select>

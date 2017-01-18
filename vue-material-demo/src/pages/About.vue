@@ -1,11 +1,11 @@
 <template>
-  <page-content page-title="About">
+  <page-content page-title="关于">
     <div class="main-content">
       <section>
-        <h2 class="md-headline">Author</h2>
+        <h2 class="md-headline">作者</h2>
         <div class="author-card">
           <md-avatar class="md-large">
-            <img src="assets/marcosmoura.jpg" alt="Marcos Moura">
+            <img src="static/marcosmoura.jpg" alt="Marcos Moura">
           </md-avatar>
           <div class="author-card-info">
             <span>Marcos Moura</span>
@@ -18,7 +18,7 @@
       </section>
 
       <section>
-        <h2 class="md-headline">Browser Support</h2>
+        <h2 class="md-headline">支持的浏览器</h2>
 
         <p>Vue Material supports the latest version of all Browsers. This means:</p>
         <ul>

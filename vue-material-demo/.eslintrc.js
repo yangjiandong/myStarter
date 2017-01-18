@@ -10,6 +10,15 @@ module.exports = {
   plugins: [
     'html'
   ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "arguments": true,
+    "window": true,
+    "Promise": true
+  },
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions

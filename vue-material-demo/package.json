@@ -2,7 +2,7 @@
   "name": "vue-material-demo",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "yangjiandong <59338947>",
+  "author": "one",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

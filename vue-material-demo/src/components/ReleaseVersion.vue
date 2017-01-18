@@ -57,7 +57,7 @@
         if (!versions) {
           const request = new XMLHttpRequest();
 
-          request.open('GET', '/versions.json', true);
+          request.open('GET', '/static/versions.json', true);
           request.setRequestHeader('Content-Type', 'application/json');
           request.onload = function () {
             versions = JSON.parse(this.response);

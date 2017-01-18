@@ -28,15 +28,15 @@
       content: ''
     }),
     mounted () {
-      // const request = new XMLHttpRequest();
-      // const self = this;
+      const request = new XMLHttpRequest();
+      const self = this;
 
-      // request.open('GET', '/changelog.html', true);
-      // request.setRequestHeader('Content-Type', 'text/html');
-      // request.onload = function() {
-      //   self.content = this.response;
-      // };
-      // request.send();
+      request.open('GET', '/changelog.html', true);
+      request.setRequestHeader('Content-Type', 'text/html');
+      request.onload = function () {
+        self.content = this.response;
+      };
+      request.send();
     }
   };
 </script>

@@ -1,8 +1,14 @@
 node
 ===
 
-vue 包说明
+vue 
 ---
+
+## vue-cloak
+
+## vue-hot-reload-api
+
+Hot reload API for Vue components ? 不知是否必须
 
 ## vue-resource
 
@@ -13,6 +19,10 @@ vue 包说明
 ## vue-loader
 
 ## vue-template-compiler
+
+
+npm libs
+---
 
 ## Karma
 

@@ -1,6 +1,18 @@
 vue-material-demo
 ===
 
+01.18
+---
+
+## 参考 vue-material doc
+
+before git tag 2.0
+
+```
+git tag 2.0
+git push origin --tags
+```
+
 2017.01.17
 ---
 

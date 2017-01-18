@@ -1,259 +1,411 @@
 <template>
+  <div class="container">
+    <md-sidenav class="main-sidebar md-left md-fixed" ref="main-sidebar">
+      <md-toolbar class="vue-material-logo" md-theme="white">
+        <router-link exact to="/">
+          <img :src="logo" alt="Vue">
+          <span>Vue Material</span>
+        </router-link>
+      </md-toolbar>
 
-<div class="app-viewport" id="file-list">
-  <md-sidenav class="md-left md-fixed" ref="sidebar">
-    <md-toolbar class="md-account-header">
-      <md-list class="md-transparent">
-        <md-list-item class="md-avatar-list">
-          <md-avatar class="md-large">
-            <img src="https://placeimg.com/64/64/people/8" alt="People">
-          </md-avatar>
+      <div class="main-sidebar-links">
+        <md-list class="md-dense">
+          <md-list-item>
+            <router-link exact to="/">Introduction</router-link>
+          </md-list-item>
 
-          <span style="flex: 1"></span>
+          <md-list-item>
+            <router-link exact to="/getting-started">Getting Started</router-link>
+          </md-list-item>
 
-          <md-avatar>
-            <img src="https://placeimg.com/40/40/people/3" alt="People">
-          </md-avatar>
+          <md-list-item>
+            <span>Themes</span>
 
-          <md-avatar>
-            <img src="https://placeimg.com/40/40/people/4" alt="People">
-          </md-avatar>
-        </md-list-item>
+            <md-list-expand>
+              <md-list>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/themes/configuration">Configuration</router-link>
+                </md-list-item>
 
-        <md-list-item>
-          <div class="md-list-text-container">
-            <span>张三</span>
-            <span>johndoe@email.com</span>
-          </div>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/themes/dynamic-themes">Dynamic Theme</router-link>
+                </md-list-item>
+              </md-list>
+            </md-list-expand>
+          </md-list-item>
 
-          <md-button class="md-icon-button md-list-action">
-            <md-icon>arrow_drop_down</md-icon>
-          </md-button>
-        </md-list-item>
-      </md-list>
-    </md-toolbar>
+          <md-list-item>
+            <span>Components</span>
 
-    <md-list>
-      <md-list-item @click="$refs.sidebar.toggle()" class="md-primary">
-        <md-icon>insert_drive_file</md-icon> <span>My files</span>
-      </md-list-item>
+            <md-list-expand>
+              <md-list>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/avatar">Avatar</router-link>
+                </md-list-item>
 
-      <md-list-item @click="$refs.sidebar.toggle()">
-        <md-icon>people</md-icon> <span>Shared with me</span>
-      </md-list-item>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/bottom-bar">Bottom Bar</router-link>
+                </md-list-item>
 
-      <md-list-item @click="$refs.sidebar.toggle()">
-        <md-icon>access_time</md-icon> <span>Recent</span>
-      </md-list-item>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/button">Button</router-link>
+                </md-list-item>
 
-      <md-list-item @click="$refs.sidebar.toggle()">
-        <md-icon>start</md-icon> <span>Starred</span>
-      </md-list-item>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/button-toggle">Button Toggle</router-link>
+                </md-list-item>
 
-      <md-list-item @click="$refs.sidebar.toggle()">
-        <md-icon>delete</md-icon> <span>Trash</span>
-      </md-list-item>
-    </md-list>
-  </md-sidenav>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/card">Card</router-link>
+                </md-list-item>
 
-  <md-whiteframe md-elevation="3">
-    <md-toolbar class="md-large">
-      <div class="md-toolbar-container">
-        <md-button class="md-icon-button" @click="$refs.sidebar.toggle()">
-          <md-icon>menu</md-icon>
-        </md-button>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/checkbox">Checkbox</router-link>
+                </md-list-item>
 
-        <span style="flex: 1"></span>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/chips">Chips</router-link>
+                </md-list-item>
 
-        <md-button class="md-icon-button">
-          <md-icon>search</md-icon>
-        </md-button>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/dialog">Dialog</router-link>
+                </md-list-item>
 
-        <md-button class="md-icon-button">
-          <md-icon>view_module</md-icon>
-        </md-button>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/file">File</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/icon">Icon</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/image-loader">Image Loader</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/ink-ripple">Ink Ripple</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/input">Input</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/list">List</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/menu">Menu</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/progress">Progress</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/radio">Radio</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/select">Select</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/sidenav">Sidenav</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/snackbar">Snackbar</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/spinner">Spinner</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/subheader">Subheader</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/switch">Switch</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/tabs">Tabs</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/table">Table</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/toolbar">Toolbar</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/tooltip">Tooltip</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/components/whiteframe">Whiteframe</router-link>
+                </md-list-item>
+              </md-list>
+            </md-list-expand>
+          </md-list-item>
+
+          <md-list-item>
+            <span>UI Elements</span>
+            <md-list-expand>
+              <md-list>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/ui-elements/layout">Layout</router-link>
+                </md-list-item>
+
+                <md-list-item class="md-inset">
+                  <router-link exact to="/ui-elements/typography">Typography</router-link>
+                </md-list-item>
+              </md-list>
+            </md-list-expand>
+          </md-list-item>
+
+          <md-list-item>
+            <router-link exact to="/changelog">Changelog</router-link>
+          </md-list-item>
+
+          <md-list-item>
+            <router-link exact to="/about">About</router-link>
+          </md-list-item>
+        </md-list>
       </div>
 
-      <div class="md-toolbar-container">
-        <h2 class="md-title">My Files</h2>
+      <release-version></release-version>
+    </md-sidenav>
 
-        <md-button class="md-fab md-mini">
-          <md-icon>add</md-icon>
-        </md-button>
-      </div>
-    </md-toolbar>
-  </md-whiteframe>
-
-  <md-list class="md-double-line">
-    <md-subheader class="md-inset">Folders</md-subheader>
-
-    <md-list-item>
-      <md-avatar class="md-avatar-icon">
-        <md-icon>folder</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Photos</span>
-        <p>Jan 9, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-
-    <md-list-item>
-      <md-avatar class="md-avatar-icon">
-        <md-icon>folder</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Recipes</span>
-        <p>Jan 17, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-
-    <md-list-item>
-      <md-avatar class="md-avatar-icon">
-        <md-icon>folder</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Work</span>
-        <p>Jan 28, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-
-      <md-divider class="md-inset"></md-divider>
-    </md-list-item>
-
-    <md-subheader class="md-inset">Files</md-subheader>
-
-    <md-list-item>
-      <md-avatar class="md-avatar-icon md-primary">
-        <md-icon>insert_drive_file</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Vacation Itinerary</span>
-        <p>Jan 20, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-
-    <md-list-item>
-      <md-avatar md-theme="orange" class="md-avatar-icon md-primary">
-        <md-icon>collections</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Kitchen Remodel</span>
-        <p>Jan 10, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-
-    <md-list-item>
-      <md-avatar md-theme="green" class="md-avatar-icon md-primary">
-        <md-icon>view_list</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Grocery Shop</span>
-        <p>Jan 10, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-
-    <md-list-item>
-      <md-avatar md-theme="orange" class="md-avatar-icon md-primary">
-        <md-icon>collections</md-icon>
-      </md-avatar>
-
-      <div class="md-list-text-container">
-        <span>Weekend Pictures</span>
-        <p>Jan 10, 2014</p>
-      </div>
-
-      <md-button class="md-icon-button md-list-action">
-        <md-icon>info</md-icon>
-      </md-button>
-    </md-list-item>
-  </md-list>
-</div>
+    <transition name="md-router" appear>
+      <router-view></router-view>
+    </transition>
+  </div>
 </template>
 
-<script>
-</script>
+<style lang="scss">
 
-<style>
-html,
-body,
-.app-viewport {
-  height: 100%;
-  overflow: hidden;
-}
+  @import 'common/stylesheets/variables.scss';
 
-.app-viewport {
-  display: flex;
-  flex-flow: column;
-}
+  $sizebar-size: 280px;
 
-.md-fab {
-  margin: 0;
-  position: absolute;
-  bottom: -20px;
-  left: 16px;
-
-  .md-icon {
-    color: #fff;
-  }
-}
-
-.md-title {
-  padding-left: 8px;
-  color: #fff;
-}
-
-.md-list {
-  overflow: auto;
-}
-
-.md-list-action .md-icon {
-  color: rgba(#000, .26);
-}
-
-.md-avatar-icon .md-icon {
-  color: #fff !important;
-}
-
-.md-sidenav .md-list-text-container > :nth-child(2) {
-  color: rgba(#fff, .54);
-}
-
-.md-account-header {
-  .md-list-item:hover .md-button:hover {
-    background-color: inherit;
+  [v-cloak] {
+    display: none;
   }
 
-  .md-avatar-list .md-list-item-container:hover {
-    background: none !important;
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
   }
-}
+
+  body {
+    display: flex;
+  }
+
+  .container {
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    transition: $swift-ease-out;
+
+    @media (min-width: 1281px) {
+      padding-left: $sizebar-size;
+    }
+  }
+
+  .main-sidebar.md-sidenav {
+    .md-sidenav-content {
+      width: $sizebar-size;
+      display: flex;
+      flex-flow: column;
+      overflow: hidden;
+
+      @media (min-width: 1281px) {
+        top: 0;
+        pointer-events: auto;
+        transform: translate3d(0, 0, 0);
+        box-shadow: $material-shadow-2dp;
+      }
+    }
+
+    .md-backdrop {
+      @media (min-width: 1281px) {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+    .md-toolbar {
+      min-height: 172px;
+      border-bottom: 1px solid rgba(#000, .12);
+    }
+
+    .vue-material-logo {
+      font-size: 24px;
+
+      a {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+      img {
+        width: 160px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .main-sidebar-links {
+      overflow: auto;
+      flex: 1;
+
+      .md-inset .md-list-item-container {
+        padding-left: 36px;
+      }
+
+      .md-list-item-container {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .release-version {
+      padding: 8px 8px 8px 16px;
+      border-top: 1px solid rgba(#000, .12);
+      display: none;
+
+      @media (max-width: 480px) {
+        display: block;
+      }
+
+      > div {
+        justify-content: center;
+      }
+
+      .md-select:after {
+        color: rgba(#000, .87);
+      }
+    }
+  }
+
+  .main-content {
+    padding: 16px;
+    flex: 1;
+    overflow: auto;
+    background-color: #fff;
+    transform: translate3D(0, 0, 0);
+    transition: $swift-ease-out;
+    transition-delay: .2s;
+  }
+
+  .md-router-enter,
+  .md-router-leave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    @media (min-width: 1281px) {
+      left: $sizebar-size;
+    }
+
+    .main-content {
+      opacity: 0;
+      overflow: hidden;
+    }
+  }
+
+  .md-router-leave {
+    z-index: 1;
+    transition: $swift-ease-in;
+    transition-duration: .25s;
+  }
+
+  .md-router-enter {
+    z-index: 2;
+    transition: $swift-ease-out;
+
+    .main-content {
+      transform: translate3D(0, 10%, 0);
+    }
+  }
+
+  code {
+    &:not(.hljs) {
+      margin-left: 1px;
+      margin-right: 1px;
+      padding: 0 4px;
+      display: inline-block;
+      border-radius: 2px;
+      font-family: "Operator Mono", "Fira Code", Menlo, Hack, "Roboto Mono", "Liberation Mono", Monaco, monospace;
+
+      pre {
+        margin: 8px 0;
+      }
+    }
+  }
+
+  .phone-viewport {
+    width: 360px;
+    height: 540px;
+    margin-right: 16px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid rgba(#000, .12);
+  }
+
+  .api-table tr > td:first-child {
+    white-space: nowrap;
+  }
 </style>
+
+<script>
+  import Vue from 'vue';
+
+  export default {
+    data () {
+      return {
+        toolbar: true,
+        theme: 'default',
+        pageTitle: ''
+      };
+    },
+    computed: {
+      logo () {
+        let theme = Vue.material.currentTheme;
+
+        if (theme) {
+          return `assets/logo-vue-material-${theme}.png`;
+        }
+
+        return 'assets/logo-vue-material-default.png';
+      }
+    },
+    methods: {
+      toggleSidenav () {
+        this.$refs['main-sidebar'].toggle();
+      },
+      closeSidenav () {
+        this.$refs['main-sidebar'].close();
+      }
+    }
+  };
+</script>

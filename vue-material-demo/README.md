@@ -1,14 +1,17 @@
-# vue-material
+vue-material-demo
+===
 
-> A Vue.js project
+2017.01.17
+---
 
-## Build Setup
+## [demo](http://codepen.io/vue-material/pen/WoZpMR)
 
-``` bash
-# install dependencies
+use [material ui](https://github.com/marcosmoura/vue-material)
+
+```
+vue init webpack vue-material-demo
+cd vue-material-demo
 npm install
-
-# serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
@@ -22,6 +25,18 @@ npm run e2e
 
 # run all tests
 npm test
+
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+`http://localhost:8000`
+
+## roboto-and-material-icons-fonts 本地化问题
+
+```
+npm install roboto-fontface --save
+npm install material-design-icons --save
+npm install sass-loader --save-dev
+npm install node-sass --save-dev
+```
+
+暂时不采用 `roboto-fontface` 字体有的虚

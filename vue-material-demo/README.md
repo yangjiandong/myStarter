@@ -1,6 +1,23 @@
 vue-material-demo
 ===
 
+01.19
+---
+
+## 运行有点问题
+
+tag 2.1
+
+返回 db5f1cc, `git co db5f1cc`
+
+tag 2.2
+
+App.vue 代码有影响
+
+```
+<release-version></release-version>
+```
+
 01.18
 ---
 

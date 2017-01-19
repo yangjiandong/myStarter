@@ -6,6 +6,12 @@ TODO
 
 ## Webpack 下 vue2 怎么优雅调试 css
 
+## css,vue 调试
+
+## dev 测试数据
+
+## ide, eslint format 支持
+
 方案
 ---
 

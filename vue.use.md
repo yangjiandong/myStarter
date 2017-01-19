@@ -1,7 +1,8 @@
 vue tips
 ===
 
-## Q
+ Q
+---
 
 - eslint `window.location`, `XMLHttpRequest` no-undef 问题
 
@@ -17,6 +18,26 @@ vue tips
     "Promise": true
   },
 ```
+
+vue
+---
+
+## vue-cloak
+
+## vue-hot-reload-api
+
+Hot reload API for Vue components ? 不知是否必须
+
+## vue-resource
+
+## vue-router
+
+## vuex
+
+## vue-loader
+
+## vue-template-compiler
+
 
 [参考](https://gold.xitu.io/entry/5775d1b76be3ff006af364a7)
 

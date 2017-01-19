@@ -1,28 +1,13 @@
 node
 ===
 
-vue 
----
-
-## vue-cloak
-
-## vue-hot-reload-api
-
-Hot reload API for Vue components ? 不知是否必须
-
-## vue-resource
-
-## vue-router
-
-## vuex
-
-## vue-loader
-
-## vue-template-compiler
-
 
 npm libs
 ---
+
+## devDependencies vs dependencies
+
+它们真正的区别是，devDependencies 下列出的模块，是我们开发时用的，比如 grunt-contrib-uglify，我们用它混淆 js 文件，它们不会被部署到生产环境。dependencies 下的模块，则是我们生产环境中需要的依赖。
 
 ## Karma
 

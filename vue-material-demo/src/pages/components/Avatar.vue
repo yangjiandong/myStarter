@@ -40,7 +40,7 @@
         <example-box card-title="Default">
           <div class="avatar-holder" slot="demo">
             <md-avatar>
-              <img src="assets/avatar.png" alt="Avatar">
+              <img src="static/avatar.png" alt="Avatar">
             </md-avatar>
 
             <md-avatar class="md-avatar-icon">
@@ -63,7 +63,7 @@
           <div slot="code">
             <code-block lang="xml">
               &lt;md-avatar&gt;
-                &lt;img src=&quot;assets/avatar.png&quot; alt=&quot;Avatar&quot;&gt;
+                &lt;img src=&quot;static/avatar.png&quot; alt=&quot;Avatar&quot;&gt;
               &lt;/md-avatar&gt;
 
               &lt;md-avatar class=&quot;md-avatar-icon&quot;&gt;
@@ -88,7 +88,7 @@
         <example-box card-title="Large">
           <div class="avatar-holder" slot="demo">
             <md-avatar class="md-large">
-              <img src="assets/avatar-2.jpg" alt="People">
+              <img src="static/avatar-2.jpg" alt="People">
             </md-avatar>
 
             <md-avatar class="md-avatar-icon md-large">
@@ -111,7 +111,7 @@
           <div slot="code">
             <code-block lang="xml">
               &lt;md-avatar class=&quot;md-large&quot;&gt;
-                &lt;img src=&quot;assets/avatar-2.jpg&quot; alt=&quot;People&quot;&gt;
+                &lt;img src=&quot;static/avatar-2.jpg&quot; alt=&quot;People&quot;&gt;
               &lt;/md-avatar&gt;
 
               &lt;md-avatar class=&quot;md-avatar-icon md-large&quot;&gt;

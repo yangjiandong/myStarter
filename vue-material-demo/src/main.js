@@ -14,12 +14,13 @@ import 'vue-material/dist/vue-material.css';
 
 import PageContent from './components/PageContent';
 // import DocsComponent from './components/DocsComponent';
-// import ExampleBox from './components/ExampleBox';
+import ExampleBox from './components/ExampleBox';
 // import ApiTable from './components/ApiTable';
 // import CodeBlock from './components/CodeBlock';
 import ReleaseVersion from './components/ReleaseVersion';
 
 Vue.component('page-content', PageContent);
+Vue.component('example-box', ExampleBox);
 Vue.component('release-version', ReleaseVersion);
 
 Vue.use(VueRouter);

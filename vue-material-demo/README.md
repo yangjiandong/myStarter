@@ -38,6 +38,10 @@ The above example will proxy the request /api/posts/1 to http://jsonplaceholder.
 
 use `vue-resource`, `vuex`
 
+## mobile app
+
+https://github.com/alex1504/vue2.0-demo
+
 01.19
 ---
 

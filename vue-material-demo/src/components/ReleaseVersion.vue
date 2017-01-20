@@ -24,7 +24,7 @@
 
     .md-select {
       width: auto;
-      min-width: auto;
+      min-width: inherit;//atuo,inherit
       margin: 0 8px;
 
       &:after {

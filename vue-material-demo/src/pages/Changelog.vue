@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Changelog">
+  <page-content page-title="更新历史">
     <div class="main-content changelog" v-html="content"></div>
   </page-content>
 </template>
@@ -28,15 +28,19 @@
       content: ''
     }),
     mounted () {
-      const request = new XMLHttpRequest();
-      const self = this;
+      let vm = this;
 
-      request.open('GET', '/changelog.html', true);
-      request.setRequestHeader('Content-Type', 'text/html');
-      request.onload = function () {
-        self.content = this.response;
-      };
-      request.send();
+      vm.$http.get('/static/changelog.html')
+        .then((response) => {
+          let data = response.body;
+          // console.log(data);
+
+          // vm.$set('content', data);
+          vm.content = data;
+        })
+        .catch(function (response) {
+          console.log(response);
+        });
     }
   };
 </script>

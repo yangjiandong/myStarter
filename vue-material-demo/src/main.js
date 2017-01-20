@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
 
 // configs
 import './config.js';
@@ -24,6 +25,7 @@ Vue.component('example-box', ExampleBox);
 Vue.component('release-version', ReleaseVersion);
 
 Vue.use(VueRouter);
+Vue.use(VueResource);
 
 let router = new VueRouter({
   mode: 'hash',
@@ -63,6 +65,7 @@ Docs = new Docs({
 handleSectionTheme(router.currentRoute);
 
 router.beforeEach((to, from, next) => {
+  console.log(to.path);
   Vue.nextTick(() => {
     let mainContent = document.querySelector('.main-content');
 

@@ -170,7 +170,7 @@
           </md-list-item>
 
           <md-list-item>
-            <router-link exact to="/changelog">Changelog</router-link>
+            <router-link exact to="/changelog">更新历史</router-link>
           </md-list-item>
 
           <md-list-item>
@@ -191,6 +191,7 @@
 <style lang="scss">
 
   @import 'common/stylesheets/variables.scss';
+  //@import 'vue-material/src/core/stylesheets/variables.scss';
 
   $sizebar-size: 280px;
 

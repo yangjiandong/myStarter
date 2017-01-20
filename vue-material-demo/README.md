@@ -34,6 +34,10 @@ The above example will proxy the request /api/posts/1 to http://jsonplaceholder.
 
 > 注意不要用 `localhost`
 
+## update Changelog.vue
+
+use `vue-resource`, `vuex`
+
 01.19
 ---
 

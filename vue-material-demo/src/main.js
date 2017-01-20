@@ -11,7 +11,7 @@ import App from './App';
 // import 'roboto-fontface/css/roboto/sass/roboto-fontface-light-italic.scss'
 // import 'roboto-fontface/css/roboto/sass/roboto-fontface-light.scss'
 // import 'material-design-icons/iconfont/material-icons.css';
-import 'vue-material/dist/vue-material.css';
+// import 'vue-material/dist/vue-material.css';
 
 import PageContent from './components/PageContent';
 // import DocsComponent from './components/DocsComponent';

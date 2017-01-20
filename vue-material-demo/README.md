@@ -42,6 +42,10 @@ use `vue-resource`, `vuex`
 
 https://github.com/alex1504/vue2.0-demo
 
+## 解决左侧菜单不显示问题
+
+参考以上项目，把 `vue-material.css` 放到 `index.html`
+
 01.19
 ---
 

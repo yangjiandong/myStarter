@@ -1,6 +1,39 @@
 vue-material-demo
 ===
 
+01.20
+---
+
+## alias assets的使用 , URLs prefixed with `~` 
+
+example: `<img src="~assets/logo.png">`
+
+
+## api proxying
+
+```
+// config/index.js
+module.exports = {
+  // ...
+  dev: {
+    proxyTable: {
+      // proxy all requests starting with /api to jsonplaceholder
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
+}
+```
+
+The above example will proxy the request /api/posts/1 to http://jsonplaceholder.typicode.com/posts/1.
+
+> 注意不要用 `localhost`
+
 01.19
 ---
 

@@ -25,6 +25,33 @@ continue, by http://codingthesmartway.com/using-material-design-with-vue-js-2/
 npm install --save vue-material
 ```
 
+alias assets的使用 , URLs prefixed with `~` , example: `<img src="~assets/logo.png">`
+
+## api proxying
+
+```angular2html
+// config/index.js
+module.exports = {
+  // ...
+  dev: {
+    proxyTable: {
+      // proxy all requests starting with /api to jsonplaceholder
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
+}
+```
+
+The above example will proxy the request /api/posts/1 to http://jsonplaceholder.typicode.com/posts/1.
+
+> 注意不要用 `localhost`
+
 vue-tutorial
 ---
 

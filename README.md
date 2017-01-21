@@ -8,13 +8,20 @@ lookup port in mac
 lsof -n -Pl|grep :8000
 ```
 
+vue-material-douban
+---
+
+[github](https://github.com/alex1504/vue2.0-demo)
+
+use vue-material, api is douban, mobile app
+
 vue-material
 ---
 
 use [material ui](https://github.com/marcosmoura/vue-material)
 
 ```
-vue init webpack vue-material-demo 
+vue init webpack vue-material-demo
 cd vue-material-demo
 npm install
 npm run dev
@@ -25,7 +32,7 @@ continue, by http://codingthesmartway.com/using-material-design-with-vue-js-2/
 npm install --save vue-material
 ```
 
-alias assets的使用 , URLs prefixed with `~` , example: `<img src="~assets/logo.png">`
+alias assets 的使用 , URLs prefixed with `~` , example: `<img src="~assets/logo.png">`
 
 ## api proxying
 

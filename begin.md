@@ -8,7 +8,7 @@ node
 
 ## 配置 npm 源
 
-npmrc 设置, 主要采用 `registry.npm.taobao.org` or `r.cnpmjs.org`
+npmrc 设置，主要采用 `registry.npm.taobao.org` or `r.cnpmjs.org`
 
 [在中国，安装 & 升级 npm 依赖的正确方法](https://sebastianblade.com/the-truly-way-to-install-upgrade-npm-dependency-in-china/)
 
@@ -40,7 +40,7 @@ npm install -g vue-cli
 
 ## 开始
 
-[参考](https://vuejs-templates.github.io/webpack/)
+[参考 vue-webpack](https://vuejs-templates.github.io/webpack/)
 
 ```
 vue init webpack my-webpack-simple-demo
@@ -52,7 +52,7 @@ vue init webpack my-webpack-simple-demo
 .
 ├── build/                      # webpack config files
 │   └── ...
-├── config/                     
+├── config/
 │   ├── index.js                # main project config
 │   └── ...
 ├── src/

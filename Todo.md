@@ -39,6 +39,10 @@ Laravel and Vue.js。可以看看，界面
 
 google material 风格
 
+example:
+
+use douban api, https://github.com/alex1504/vue2.0-demo
+
 ### Element ui
 
 饿了吗 web 前端
@@ -46,6 +50,12 @@ google material 风格
 A Vue.js 2.0 UI Toolkit for Web (http://element.eleme.io/)
 
 - [gitbub](https://github.com/ElemeFE/element)
+
+example
+
+[Vue-Exp](https://github.com/yinshipeng/vue-exp)，基于 Vue.js 2.0 搭建的 PC 端演示框架。
+
+公司 imac 环境下不能正常运行 ?
 
 ### mint-ui
 

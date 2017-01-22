@@ -1,6 +1,15 @@
 vue-material-demo
 ===
 
+01.22
+---
+
+## eslint for vue
+
+`npm install eslint-config-vue --save-dev`
+
+暂时不启用
+
 01.20
 ---
 

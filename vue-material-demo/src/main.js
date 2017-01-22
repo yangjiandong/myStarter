@@ -1,18 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
-
-// configs
 import './config.js';
 import routes from './routes.js';
 import App from './App';
-
 // import 'roboto-fontface/css/roboto/roboto-fontface.css'
 // import 'roboto-fontface/css/roboto/sass/roboto-fontface-light-italic.scss'
 // import 'roboto-fontface/css/roboto/sass/roboto-fontface-light.scss'
 // import 'material-design-icons/iconfont/material-icons.css';
 // import 'vue-material/dist/vue-material.css';
-
 import PageContent from './components/PageContent';
 // import DocsComponent from './components/DocsComponent';
 import ExampleBox from './components/ExampleBox';
@@ -65,7 +61,7 @@ Docs = new Docs({
 handleSectionTheme(router.currentRoute);
 
 router.beforeEach((to, from, next) => {
-  console.log(to.path);
+  // console.log(to.path);
   Vue.nextTick(() => {
     let mainContent = document.querySelector('.main-content');
 

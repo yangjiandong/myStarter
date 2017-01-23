@@ -12,8 +12,8 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-  @import '../../../src/core/stylesheets/variables.scss';
+<style lang="scss" scoped>
+  @import '../common/stylesheets/variables.scss';
 
   .code-block {
     overflow: hidden;
@@ -118,8 +118,8 @@
   }
 </style>
 
-<style lang="sass">
-  @import '../../../src/core/stylesheets/variables.scss';
+<style lang="scss">
+  @import '../common/stylesheets/variables.scss';
 
   .code-block {
     .hljs-keyword,

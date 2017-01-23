@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
   .api-table + .api-table {
     margin-top: 42px;
   }

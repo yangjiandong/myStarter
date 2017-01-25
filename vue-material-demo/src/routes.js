@@ -43,6 +43,11 @@ const components = [
     path: '/components/avatar',
     name: 'components:avatar',
     component: Avatar
+  },
+  {
+    path: '/components/bottom-bar',
+    name: 'components:bottom-bar',
+    component: require('./pages/components/BottomBar')
   }
 ];
 

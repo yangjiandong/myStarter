@@ -152,9 +152,7 @@
                 </md-list-item>
               </md-list>
             </md-list-expand>
-          </md-list-item>
 
-          <md-list-item>
             <span>UI Elements</span>
             <md-list-expand>
               <md-list>

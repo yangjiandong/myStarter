@@ -1,6 +1,26 @@
 vue-material-demo
 ===
 
+01.25
+---
+
+## docker
+
+linux 下重新安装 sass
+`npm rebuild node-sass`
+
+webpack hot, dev-server.js
+```javascript
+var devMiddleware = require('webpack-dev-middleware')(compiler, {
+  publicPath: webpackConfig.output.publicPath,
+  // quiet: true
+  quiet: false, //Changed to for additional verbosity
+  watchOptions: { //Add Polling
+    aggregateTimeout: 300,
+    poll: 1000
+  }
+})
+```
 01.22
 ---
 
@@ -15,8 +35,8 @@ vue-material-demo
 ```javascript
 router.beforeEach((to, from, next) => {
   /**
-   * 1.如果已经登陆，访问的是登陆页面，直接重定向到主页，如果不是则放开
-   * 2.如果没有登陆，所有访问重定向到登录页
+   * 1. 如果已经登陆，访问的是登陆页面，直接重定向到主页，如果不是则放开
+   * 2. 如果没有登陆，所有访问重定向到登录页
    */
   console.log(to.path);
   if (store.getters.getIsLogin) {
@@ -38,7 +58,7 @@ router.beforeEach((to, from, next) => {
 01.20
 ---
 
-## alias assets的使用 , URLs prefixed with `~` 
+## alias assets 的使用 , URLs prefixed with `~`
 
 example: `<img src="~assets/logo.png">`
 

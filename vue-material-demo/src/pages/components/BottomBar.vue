@@ -225,7 +225,7 @@
   </page-content>
 </template>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
   .md-bottom-bar {
     position: absolute;
     right: 0;

@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Getting Started">
+  <page-content page-title="起步">
     <div class="main-content">
       <article>
         <section>

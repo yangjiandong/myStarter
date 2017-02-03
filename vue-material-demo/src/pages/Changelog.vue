@@ -30,7 +30,7 @@
     mounted () {
       let vm = this;
 
-      vm.$http.get('/static/changelog.html')
+      vm.$http.get('static/changelog.html')
         .then((response) => {
           let data = response.body;
           // console.log(data);

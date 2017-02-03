@@ -4,7 +4,9 @@
       <div class="introduction">
         <div class="button-actions">
           <div class="example">
-            <img src="~assets/example.png" alt="Material Design">
+            <!-- 生产环境下不能访问到资源 -->
+            <!--<img src="~assets/example.png" alt="Material Design">-->
+            <img src="static/vue-material-example.png" alt="Material Design">
           </div>
 
           <div class="introduction">采用 Material Design and Vue 2 构建前端</div>

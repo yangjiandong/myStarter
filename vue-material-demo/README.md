@@ -6,10 +6,12 @@ vue-material-demo
 
 ## docker
 
-linux 下重新安装 sass
-`npm rebuild node-sass`
+- linux 下重新安装 sass
 
-[参考](http://stackoverflow.com/questions/41471274/vue-js-webpack-template-in-a-docker-container-how-do-i-add-webpack-dev-server), webpack hot, dev-server.js
+  `npm rebuild node-sass`
+
+- docker webpack 热部署问题解决 [参考](http://stackoverflow.com/questions/41471274/vue-js-webpack-template-in-a-docker-container-how-do-i-add-webpack-dev-server), webpack hot, dev-server.js
+
 ```javascript
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,

@@ -1,6 +1,11 @@
 vue-material-demo
 ===
 
+02.03
+---
+
+## vue 不在官方维护 vue-resource,  推荐 [axios](https://github.com/mzabriskie/axios)
+
 01.25
 ---
 

@@ -36,6 +36,8 @@ Hot reload API for Vue components ? 不知是否必须
 
 ## vue-resource
 
+官方不再维护，推荐 axios
+
 ## vue-router
 
 ## vuex

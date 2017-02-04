@@ -25,6 +25,31 @@ mobile -> vux
 
 # vue
 
+## mobile webapp
+
+### 基于 vue.js 重写 Cnodejs.org 社区的 webapp
+
+- [gitbub](https://github.com/shinygang/Vue-cnodejs)
+
+    基于 `vue2` ，可参考用于构建 mobile app
+
+用到的 js
+- timeage 时间支持库，比如显示`x 小时前`
+- autoprefixer
+- chalk 字符处理 比如显示颜色样式
+
+### 重构的卖座网
+
+- [gitbub](https://github.com/zhengguorong/maizuo/tree/master/vuexMaizuo2)
+
+### vux
+
+结合微信 ui
+
+Mobile web UI Components based on Vue and WeUI. Be Cool with Vue & WeUI. (https://vux.li/)
+
+- [gitbub](https://github.com/airyland/vux)
+
 ## blog
 
 [github](https://github.com/jcc/blog)
@@ -117,6 +142,7 @@ Mobile UI elements for Vue.js http://mint-ui.github.io/#!/en
 项目升级更新详情：https://github.com/liuzhenangel/v2ex_frontend/commit/8bc0a8d87728e9e08f9207ebe0ff6e806cc704f2
 
 第一步，安装 vue-migration-helper 工具。
+
 ```
 # install
 npm install --global git://github.com/vuejs/vue-migration-helper.git
@@ -164,17 +190,6 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 
 ## webapp
 
-### 基于 vue.js 重写 Cnodejs.org 社区的 webapp
-
-- [gitbub](https://github.com/shinygang/Vue-cnodejs)
-
-    基于 `vue2` ，可参考用于构建 mobile app
-
-用到的 js
-- timeage 时间支持库，比如显示`x 小时前`
-- autoprefixer
-- chalk 字符处理 比如显示颜色样式
-
 ### tong2-family 基于 vue、vuex、vue-router、echarts 的数据可视化展示平台
 
 > 使用 vue2.0、vuex、vue-router2.0、echarts 搭建的一个数据展示平台
@@ -195,20 +210,6 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 php 开发的 webapi，提供 web，android，ios，web 前端采用 vue(1.0)
 
 - [daza-frontend](https://github.com/lijy91/daza-frontend)
-
-## mobile webapp
-
-### 重构的卖座网
-
-- [gitbub](https://github.com/zhengguorong/maizuo/tree/master/vuexMaizuo2)
-
-### vux
-
-结合微信 ui
-
-Mobile web UI Components based on Vue and WeUI. Be Cool with Vue & WeUI. (https://vux.li/)
-
-- [gitbub](https://github.com/airyland/vux)
 
 ## table
 

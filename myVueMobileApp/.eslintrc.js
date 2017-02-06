@@ -24,6 +24,7 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     "no-useless-escape": 0,
+    // 语句强制分号结尾,暂时提示
     "semi": ["warn", "always"],
     "space-before-function-paren": 0,
   }

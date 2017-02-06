@@ -1,11 +1,32 @@
 vue mobile app
 ===
 
-2017.02.04
----
+2017.02.06
+----------
+
+## 仿照 vue-cnodejs 构建
 
 readme
 ---
+
+## module
+
+### fastclick
+
+规避移动设备上click事件的延迟响应
+
+### timeago.js
+
+将datetime时间转化成类似于*** 时间前的描述字符串
+
+### moment
+
+JavaScript 日期处理类库
+
+### libs
+
+Alert
+
 
 # 使用vue2.0+vuex2.0+vue-router2.0重构的卖座网
 

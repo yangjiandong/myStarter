@@ -1,29 +1,35 @@
-export default [{
+// require.ensure 是 Webpack 的特殊语法，用来设置 code-split point
+const Home = resolve => {
+  require.ensure(['./views/index.vue'], () => {
+    resolve(require('./views/index.vue'));
+  });
+};
+//
+// const List = resolve => {
+//   require.ensure(['./views/list.vue'], () => {
+//     resolve(require('./views/list.vue'));
+//   });
+// };
+
+const routers = [{
   path: '/',
-  name: 'index',
-  component: require('./views/home/index')
+  name: 'home',
+  component: Home
+}, {
+  path: '/cnodevue',
+  name: 'cnodevue',
+  component: Home
 }, {
   path: '/login',
   name: 'login',
-  component: require('./views/member/login')
-}, {
-  path: '/film',
-  name: 'film',
-  component: require('./views/film/film-view')
-}, {
-  path: '/cinema',
-  name: 'cinema',
-  component: require('./views/cinema/index')
-}, {
-  path: '/detail/:id',
-  name: 'detail',
-  component: require('./views/film/detail')
-}, {
-  path: '/card',
-  name: 'card',
-  component: require('./views/card/index')
+  component (resolve) {
+    require.ensure(['./views/login.vue'], () => {
+      resolve(require('./views/login.vue'));
+    });
+  }
 }, {
   path: '*',
-  component: require('./views/home/index')
-}]
+  component: Home
+}];
 
+export default routers;

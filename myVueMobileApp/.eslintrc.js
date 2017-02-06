@@ -1,4 +1,9 @@
 module.exports = {
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,6 +22,9 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    "no-useless-escape": 0,
+    "semi": ["warn", "always"],
+    "space-before-function-paren": 0,
   }
 }

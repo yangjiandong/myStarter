@@ -1,6 +1,8 @@
 node.js && vue begin
 ===
 
+包括但不限于基于 Node.js 的前端工程化方案；诸如 Webpack、Rollup 这样的打包工具；Babel、PostCSS 这样的转译工具；TypeScript、Elm 这样转译至 JavaScript 的编程语言；React、Angular、Vue 这样面向现代 Web 应用需求的前端框架及其生态，也涌现出了像同构 JavaScript与通用 JavaScript 应用这样将服务器端渲染（Server-side Rendering）与单页面应用模型（Single-page App）结合的 Web 应用架构方式，可以说是百花齐放。
+
 node
 ---
 

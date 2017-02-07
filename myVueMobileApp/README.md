@@ -27,7 +27,7 @@ JavaScript 日期处理类库
 
 Alert
 
-## webpack module
+## webpack 2.x 系列
 
 ### ExtractTextPlugin
 

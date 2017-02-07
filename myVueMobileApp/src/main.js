@@ -2,7 +2,7 @@ import Vue from 'vue';
 import $ from 'webpack-zepto';
 import VueRouter from 'vue-router';
 import filters from './filters';
-import routes from './routers';
+import routes from './router/index';
 import Alert from './libs/alert';
 import store from './vuex/user';
 import FastClick from 'fastclick';

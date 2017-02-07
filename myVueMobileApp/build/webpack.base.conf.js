@@ -2,6 +2,8 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+var webpack = require('webpack')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -19,7 +21,8 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    // require 时省略的扩展名，如：require('module') 不需要 module.js
+    extensions: ['.js', '.vue', '.json', '.scss', '.css'],
     modules: [
       resolve('src'),
       resolve('node_modules')
@@ -69,5 +72,12 @@ module.exports = {
         }
       }
     ]
-  }
-}
+  },
+  //其他配置
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      names: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk
+      minChunks: 3 // 提取至少3个模块共有的部分
+    })
+  ]
+};

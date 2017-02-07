@@ -27,6 +27,27 @@ JavaScript 日期处理类库
 
 Alert
 
+## webpack module
+
+### ExtractTextPlugin
+
+将样式抽取出来为独立的文件
+
+将require引入的样式嵌入js文件中，有好处也有坏处。好处是减少了请求数，坏处也很明显，就是当你的样式文件很大时，造成编译的js文件也很大。
+
+我们可以使用插件的方式，将样式抽取成独立的文件。使用的插件就是extract-text-webpack-plugin
+
+### CommonsChunkPlugin
+
+```
+  //其他配置
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      names: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk
+      minChunks: 3 // 提取至少3个模块共有的部分
+    })
+  ]
+```
 
 # 使用vue2.0+vuex2.0+vue-router2.0重构的卖座网
 

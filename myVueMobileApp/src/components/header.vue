@@ -14,7 +14,7 @@
         <i class="num" v-if="messageCount > 0"> {{messageCount}}</i>
         <router-link to="/add">
           <i v-if="needAdd" v-show="!messageCount || messageCount <= 0"
-             class="iconfont add-icon"></i>
+             class="iconfont add-icon icon-close"></i>
         </router-link>
       </div>
     </header>

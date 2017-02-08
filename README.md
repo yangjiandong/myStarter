@@ -8,6 +8,14 @@ lookup port in mac
 lsof -n -Pl|grep :8000
 ```
 
+Gaining insight on TCP traffic
+
+```
+lsof -itcp
+or
+netstat -anptcp
+```
+
 vue-material-douban
 ---
 

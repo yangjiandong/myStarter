@@ -61,7 +61,7 @@ module.exports = {
       },
 
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
         loader: 'url',
         query: [{
           limit: 10000,

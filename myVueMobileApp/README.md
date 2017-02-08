@@ -6,6 +6,8 @@ vue mobile app
 
 ## 仿照 vue-cnodejs 构建
 
+TODO, 打包发布产品，源码没保护
+
 readme
 ---
 

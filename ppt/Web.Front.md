@@ -1,5 +1,5 @@
 # 前端开发的历史和趋势
-> HRP 开发部 - [杨建东]()
+> HRP 开发部 - 『杨建东』()
 
 ----
 
@@ -89,18 +89,30 @@ Ajax 技术诞生，改变了一切
 
 ----
 
-## SPA
+## 热门的 MVVM 框架
 
-> SPA = Single-page application
+- Angular，Google 公司推出的 MVVM 前端框架。
+- React，Facebook 推出的一个 JavaScript 框架，主要用于前端开发。
+- Vue，Vue.js 是现在很热门的一种前端 MVVM 框架。它的基本思想与 Angular 类似，但是用法更简单，而且引入了响应式编程的概念。
 
 ----
 
-前端可以做到
-- 读写数据
-- 切换视图
-- 用户交互
+## SPA
 
-这意味着，网页其实是一个应用程序。
+> SPA = Single-page application，单页面应用
+
+----
+
+- 一旦打开这个网站，这个“页面”就会一次性的下载到本地。
+- SPA 页面给用户最直观的一个感受是，每次点击一个链接，页面是不会刷新的。所以用户体验更接近于本地应用，舒适感提高很多。
+- 需要注意的是，这里所谓的“单页面”指的是技术底层网站只有一个页面，但是从显示内容角度而言，一个 SPA 仍然可以展示多页内容的。
+
+----
+
+- 这一类的框架比较知名的有 AngularJS, Ember.js, ExtJS, 还有 facebook 的 React ，国人尤小右开发的 Vue.js
+- AngularJS 和 Ember.js 都比较复杂，学习曲线陡峭，(Angular 3 开发组告诉我，你又得像 ng1 转 ng 2 一样，从头学一次）
+- Vue 的好处是简单高效
+- React 社区最为火爆
 
 ----
 
@@ -119,25 +131,6 @@ Ajax 技术诞生，改变了一切
 <img src="./markdown/architecture-new.png">
 
 多了一个前端 MVC 层
-
-----
-
-## Angular
-
-Google 公司推出的 MVVM 前端框架。
-
-----
-
-## React
-
-React 是由 Facebook 推出的一个 JavaScript 框架，主要用于前端开发。
-
-----
-
-## Vue
-
-- Vue.js 是现在很热门的一种前端 MVVM 框架。
-- 它的基本思想与 Angular 类似，但是用法更简单，而且引入了响应式编程的概念。
 
 ----
 
@@ -175,10 +168,38 @@ React 是由 Facebook 推出的一个 JavaScript 框架，主要用于前端开�
 
 ## 前端开发模式的根本改变
 
+----
+
+- <font color="orange">前端不再直接编写 CSS，HTML，JS</font>
+
+----
+
+- 编译工具去书写 css，html，js
+
+----
+
 - Node 环境下开发
+- 项目工程化，前端开发工具／编译工具 逐渐成型
 - 大量使用服务器端工具
 - 引入持续集成等软件工程的标准流程
-- 开发完成后，编译成浏览器可以运行的脚本，放上 CDN
+
+----
+
+## 掌握的技能
+
+- 要会部署 nodejs 环境
+    - <font color="orange">webpack</font>（模块打包，预处理，热加载，发布等）
+    - babel（编译器）
+    - postCSS 的插件（补全各种浏览器前缀）
+- CSS:Less，scss，...
+- Javascript: ES6, ES7(or typescript, coffeeScript), 通过 babel 编译成现在流行浏览器兼容 Javascript
+- Vue.js / React （反正掌握一款 MV* 框架是必要的）
+
+----
+
+## 挑战
+
+- 前端的工作更具有挑战性，方向更多样化
 
 ----
 
@@ -207,6 +228,17 @@ React 是由 Facebook 推出的一个 JavaScript 框架，主要用于前端开�
 
 ----
 
-# 谢谢
+## 浏览器问题
 
+- 淘宝率先不支持 IE8
+
+----
+
+## jQuery 的事
+
+- jQuery 的语法被 ES2015 甚至被新时代的浏览器吸收并内置原生支持了（以前甚至传出浏览器要内置 jQuery）
+
+----
+
+# 谢谢
 

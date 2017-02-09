@@ -82,6 +82,14 @@ example
 
 公司 imac 环境下不能正常运行 ?
 
+run
+```
+# run json-server for mock data
+npm run mock
+# run dev
+npm run dev
+```
+
 ### mint-ui
 
 Mobile UI elements for Vue.js http://mint-ui.github.io/#!/en

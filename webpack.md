@@ -101,4 +101,34 @@ URLs prefixed with `~`
 
 example: `<img src="~assets/logo.png">`
 
+## [stack-source-map](https://github.com/chemzqm/stack-source-map)
+
+## [file-load](https://github.com/webpack-contrib/file-loader)
+
+example:
+
+```
+require("file-loader?name=js/[hash].script.[ext]!./javascript.js");
+// => js/0dcbbaa701328a3c262cfd45869e351f.script.js
+
+require("file-loader?name=html-[hash:6].html!./page.html");
+// => html-109fa8.html
+
+require("file-loader?name=[hash]!./flash.txt");
+// => c31e9820c001c9c4a86bce33ce43b679
+
+require("file-loader?name=[sha512:hash:base64:7].[ext]!./image.png");
+// => gdyb21L.png
+// use sha512 hash instead of md5 and with only 7 chars of base64
+
+require("file-loader?name=img-[sha512:hash:base64:7].[ext]!./image.jpg");
+// => img-VqzT5ZC.jpg
+// use custom name, sha512 hash instead of md5 and with only 7 chars of base64
+
+require("file-loader?name=picture.png!./myself.png");
+// => picture.png
+
+require("file-loader?name=[path][name].[ext]?[hash]!./dir/file.png")
+// => dir/file.png?e43b20c069c4a01867c31e98cbce33c9
+```
 

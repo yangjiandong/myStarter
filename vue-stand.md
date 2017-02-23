@@ -58,3 +58,22 @@ vue.js组件开发和使用规范
 
 - 使用$emit来对外触发事件，而不用$dispatch和$broadcast
 - 嵌套组件之间通信，使用$parent和$children，而不用$emit，避免使用这错误使用自定义事件
+
+经验
+----
+
+## vue-router 路由懒加载
+
+对应的组件定义成异步组件：
+
+```
+const Foo = resolve => {
+  // require.ensure 是 Webpack 的特殊语法，用来设置 code-split point
+  // （代码分块）
+  require.ensure(['./Foo.vue'], () => {
+    resolve(require('./Foo.vue'))
+  })
+}
+or
+const find = r => require.ensure([], () => r(require('../page/find/find')), 'find')
+```

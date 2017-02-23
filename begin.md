@@ -121,6 +121,19 @@ vue-stand.md
 
 ## TODO
 
+### debug
+
+[Webpack sourcemap](https://segmentfault.com/a/1190000004280859):
+
+- `#eval-source-map` : 这个就是把 eval 的 sourceURL 换成了完整 souremap 信息的 DataUrl
+- or `#cheap-module-eval-source-map` : 不包含列信息，同时 loader 的 sourcemap 也被简化为只包含对应行的。最终的 sourcemap 只有一份，它是 webpack 对 loader 生成的 sourcemap 进行简化，然后再次生成的。
+- [Stack-source-map](https://github.com/chemzqm/stack-source-map),Attamp to make error stack works with source-map in browser, only Chrome supportted yet.
+- [解决生产环境下Debug](https://blog.sentry.io/2015/10/29/debuggable-javascript-with-source-maps.html)
+
+  ```
+  /# sourceMappingURL: http://company.intranet/app/static/app.min.js.map
+  ```
+
 ### axios
 
 - 自定义属性
@@ -129,6 +142,7 @@ vue-stand.md
 
 ### ui
 
+- webapp ui [vux](https://github.com/airyland/vux)
 
 
 

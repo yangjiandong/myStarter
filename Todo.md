@@ -10,15 +10,40 @@ webpack 下 vue2 怎么优雅调试 css
 
 ## css,vue 调试
 
+[Webpack sourcemap](https://segmentfault.com/a/1190000004280859):
+
+- `#eval-source-map` : 这个就是把 eval 的 sourceURL 换成了完整 souremap 信息的 DataUrl
+- or `#cheap-module-eval-source-map` : 不包含列信息，同时 loader 的 sourcemap 也被简化为只包含对应行的。最终的 sourcemap 只有一份，它是 webpack 对 loader 生成的 sourcemap 进行简化，然后再次生成的。
+- [Stack-source-map](https://github.com/chemzqm/stack-source-map),Attamp to make error stack works with source-map in browser, only Chrome supportted yet.
+- [解决生产环境下Debug](https://blog.sentry.io/2015/10/29/debuggable-javascript-with-source-maps.html)
+
+  ```
+  /# sourceMappingURL: http://company.intranet/app/static/app.min.js.map
+  ```
+
 ## dev 测试数据
 
-## ide, eslint format 支持
+## eslint, jsbeautify format 支持
 
-方案
----
+### sbt3
 
-ui -> Element
-mobile -> vux
+感觉比较流畅，format 采用 jsbeautify，目前的问题是格式化后删除了所有空行，没有保留 `function ()` 空格
+
+### vim
+
+没有sbt3 流畅，暂时没采用jsbeautify 格式化
+
+### webstorm
+
+## axios
+
+- 自定义属性
+
+## javascript 工具库
+
+- timeage 时间支持库，比如显示`x 小时前`
+- autoprefixer
+- chalk 字符处理 比如显示颜色样式
 
 参考起步项目
 ---
@@ -31,12 +56,7 @@ mobile -> vux
 
 - [gitbub](https://github.com/shinygang/Vue-cnodejs)
 
-    基于 `vue2` ，可参考用于构建 mobile app
-
-用到的 js
-- timeage 时间支持库，比如显示`x 小时前`
-- autoprefixer
-- chalk 字符处理 比如显示颜色样式
+  基于 `vue2` ，可参考用于构建 mobile app
 
 ### 重构的卖座网
 
@@ -75,20 +95,6 @@ use douban api, https://github.com/alex1504/vue2.0-demo
 A Vue.js 2.0 UI Toolkit for Web (http://element.eleme.io/)
 
 - [gitbub](https://github.com/ElemeFE/element)
-
-example
-
-[Vue-Exp](https://github.com/yinshipeng/vue-exp)，基于 Vue.js 2.0 搭建的 PC 端演示框架。
-
-公司 imac 环境下不能正常运行 ?
-
-run
-```
-# run json-server for mock data
-npm run mock
-# run dev
-npm run dev
-```
 
 ### mint-ui
 
@@ -205,13 +211,6 @@ Vue Admin Panel Framework, Powered by Vue 2.0 and Bulma 0.2
 对华科电信大二学生的做了一些调查，对调查结果进行可视化展示，同时分析了通信 1502 班的群聊记录，得到班级群聊活跃度等信息？
 
 - [github](https://github.com/hieeyh/tong2-family)
-
-### douban
-
-模仿 douban，提供后台和前台，前台采用 vue
-
-- [github](https://github.com/jiakeqi/douban)
-
 
 ## daza
 

@@ -98,12 +98,12 @@ vue init webpack my-webpack-simple-demo
 
 - [vue js 入门到进阶 SPA 应用开发](https://my.oschina.net/fellowtraveler/blog/760728)
 
-### Admin
+### web
 
 - [bulma style admin](https://github.com/vue-bulma/vue-admin.git)
 - [MEVN全栈博客项目-使用VUE2.0进行SPA开发](https://github.com/xiangsongtao/X-SONGTAO-VUE)
 - [sls-admin,use element-ui](https://github.com/sailengsi/sls-admin)
-
+- 模仿 douban，提供后台和前台，前台采用 vue, [github](https://github.com/jiakeqi/douban)
 ### mobile webapp
 
 - [网易音乐](https://github.com/javaSwing/NeteaseCloudWebApp)
@@ -132,7 +132,21 @@ UI
 
 ## bootstrap
 
+不推荐，不是简单的使用css 样式，还要引入jquery
+
 ## element
+
+- [Vue-Exp](https://github.com/yinshipeng/vue-exp)，基于 Vue.js 2.0 搭建的 PC 端演示框架。
+
+公司 imac 环境下不能正常运行 ?
+
+run
+```
+# run json-server for mock data
+npm run mock
+# run dev
+npm run dev
+```
 
 ## material
 
@@ -150,28 +164,7 @@ Material Design Components in HTML/CSS/JS
 
 Material design for Vue.js
 
-## TODO
-
-### debug
-
-[Webpack sourcemap](https://segmentfault.com/a/1190000004280859):
-
-- `#eval-source-map` : 这个就是把 eval 的 sourceURL 换成了完整 souremap 信息的 DataUrl
-- or `#cheap-module-eval-source-map` : 不包含列信息，同时 loader 的 sourcemap 也被简化为只包含对应行的。最终的 sourcemap 只有一份，它是 webpack 对 loader 生成的 sourcemap 进行简化，然后再次生成的。
-- [Stack-source-map](https://github.com/chemzqm/stack-source-map),Attamp to make error stack works with source-map in browser, only Chrome supportted yet.
-- [解决生产环境下Debug](https://blog.sentry.io/2015/10/29/debuggable-javascript-with-source-maps.html)
-
-  ```
-  /# sourceMappingURL: http://company.intranet/app/static/app.min.js.map
-  ```
-
-### axios
-
-- 自定义属性
-
-### javascript 工具库
-
-### ui
+## mobile web ui
 
 - webapp ui [vux](https://github.com/airyland/vux)
 
@@ -183,9 +176,20 @@ sublime text3
   - Type "install package" and press enter. Then search for "Material Theme"
   - Preferences > Packages Settings and choose Material Theme > Activate Material Theme
 - editorconfig
-- prettify
+- [prettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+  - html,css,js format code(cmd+shift+h)
+  - blank line 不保留? `.jsbeautifyrc`
 
-  html,css,js format code(cmd+shift+h)
+  ```
+  {
+  "html": {
+    "blank_line": "", // This is how a blank line is to appear (up to the newline character).
+    "keep_blank_lines": true, // If true, preserve one blank where blank(s) are encountered.
+    "add_blank_lines_around_comments": true, // If true, set off comment blocks with blanks.
+    "add_blank_line_after_doc_string": true, // If true, add blank line after doc strings.
+    }
+  }
+  ```
 - scss,sass: Syntax Highlighting for Sass
 - Highlighter, show color for hex or rgb
 - local history

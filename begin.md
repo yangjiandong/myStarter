@@ -144,6 +144,15 @@ vue-stand.md
 
 - webapp ui [vux](https://github.com/airyland/vux)
 
+sublime text3
+----
 
+- editorconfig
+- prettify
+
+  html,css,js format code(cmd+shift+h)
+- key
+
+  Ctrl+Shift+M：选中花括号里面的全部内容不包括{}。
 
 

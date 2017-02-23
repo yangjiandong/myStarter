@@ -93,6 +93,7 @@ vue init webpack my-webpack-simple-demo
 ├── index.html                  # index.html template
 └── package.json                # build scripts and dependencies
 ```
+
 ##  参考入门示例
 
 - [vue js 入门到进阶 SPA 应用开发](https://my.oschina.net/fellowtraveler/blog/760728)
@@ -101,6 +102,35 @@ vue init webpack my-webpack-simple-demo
 
 vue-stand.md
 
+webpack
+----
+
+## 入门了解
+
+- [简单易懂的 webpack 入门教程](https://github.com/94dreamer/webpack)
+
+UI
+----
+
+## bootstrap
+
+## element
+
+## material
+
+### [material-design-lite](https://github.com/google/material-design-lite)
+
+Material Design Components in HTML/CSS/JS
+
+[提供网站模板参考](http://getmdl.io)
+
+### [materializecss](http://materializecss.com/)
+
+[示例及模板](http://materializecss.com/)
+
+### [vue-material](https://github.com/marcosmoura/vue-material)
+
+Material design for Vue.js
 
 
 

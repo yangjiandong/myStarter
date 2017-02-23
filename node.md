@@ -1,7 +1,6 @@
 node
 ===
 
-
 npm libs
 ---
 
@@ -203,3 +202,24 @@ Q&A
 ```
 cnpm i node-sass
 ```
+
+## import (ES6) or require() (Node) 
+
+ES6 语法
+
+## webpack load 次序
+
+```
+module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+```
+
+Loaders are processed in reverse array order. That means css-loader will run before style-loader.
+
+从右到左
+
+

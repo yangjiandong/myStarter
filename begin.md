@@ -197,4 +197,11 @@ sublime text3
 
   Ctrl+Shift+M：选中花括号里面的全部内容不包括{}。
 
+sbt3
+----
 
+- prettify
+
+  ```
+  "max_preserve_newlines": 1, // 在一个chunk中允许的最大换行数（0表示不允许）
+  ```

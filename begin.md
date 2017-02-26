@@ -192,6 +192,7 @@ sublime text3
   ```
 - scss,sass: Syntax Highlighting for Sass
 - Highlighter, show color for hex or rgb
+- eslint format
 - local history
 - key
 

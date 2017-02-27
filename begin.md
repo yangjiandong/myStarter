@@ -183,6 +183,8 @@ sublime text3
   ```
   {
   "html": {
+    "max_preserve_newlines": 1, // 在一个chunk中允许的最大换行数（0表示不允许）
+    // 以下设置了没效果
     "blank_line": "", // This is how a blank line is to appear (up to the newline character).
     "keep_blank_lines": true, // If true, preserve one blank where blank(s) are encountered.
     "add_blank_lines_around_comments": true, // If true, set off comment blocks with blanks.
@@ -197,11 +199,3 @@ sublime text3
 
   Ctrl+Shift+M：选中花括号里面的全部内容不包括{}。
 
-sbt3
-----
-
-- prettify
-
-  ```
-  "max_preserve_newlines": 1, // 在一个chunk中允许的最大换行数（0表示不允许）
-  ```

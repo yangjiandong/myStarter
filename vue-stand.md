@@ -77,3 +77,12 @@ const Foo = resolve => {
 or
 const find = r => require.ensure([], () => r(require('../page/find/find')), 'find')
 ```
+
+javascript 格式规范
+----
+
+## [JavaScript 语句后应该加分号么](https://www.zhihu.com/question/20298345)
+
+- Vue.js 的代码全部不带分号
+- 一行开头是括号或者方括号的时候加上分号就可以了
+

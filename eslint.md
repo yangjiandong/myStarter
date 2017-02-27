@@ -25,7 +25,7 @@ eslint --init
 
 ### sb3
 
-install the ESLint-Formatter 
+install the ESLint-Formatter
 
 Preferences -> Package Settings -> ESLint-Formatter -> Settings  —  User file:
 ```
@@ -72,11 +72,15 @@ Or just tweak a rule
 ```
 /* eslint no-comma-dangle:1 */
 // Make this just a warning, not an error
-var obj = { key: 'value', }  
+var obj = { key: 'value', }
 ```
 
 说明
 ---
+
+"off" or "0"：表示这个规则关闭，
+"warn" or "1"：表示这个规则是一个警告处理
+"error" or "2"：表示这个规则是一个错误处理
 
 "no-alert": 0,//禁止使用alert confirm prompt
 "no-array-constructor": 2,//禁止使用数组构造器

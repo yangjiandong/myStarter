@@ -199,6 +199,7 @@ sublime text3
 - eslint format
 - local history
 - key
-
-  Ctrl+Shift+M：选中花括号里面的全部内容不包括{}。
-
+  - `Ctrl+Shift+M` : 选中花括号里面的全部内容不包括{}
+  - `{ "keys": ["alt+/"], "command": "auto_complete" },`: auto complete
+  - `cmd+up`: start of file
+  - `cmd+down`: end of file

@@ -167,6 +167,8 @@ Material design for Vue.js
 ## mobile web ui
 
 - webapp ui [vux](https://github.com/airyland/vux)
+- [museui, Material Design UI library for Vuejs 2.0](https://github.com/museui/muse-ui)
+  - [museui-demo](https://github.com/museui/museui-demo)
 
 sublime text3
 ----

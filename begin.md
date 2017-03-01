@@ -171,6 +171,21 @@ Material design for Vue.js
 sublime text3
 ----
 
+- auto save
+```
+"rulers":
+  [
+    80,
+    100
+  ],
+  "save_on_focus_lost": true,
+  "show_encoding": true,
+  "show_full_path": true,
+  "spell_check": false,
+  "tab_size": 4,
+  "translate_tabs_to_spaces": true,
+  "update_check": false
+```
 - material-theme
 
   - Type "install package" and press enter. Then search for "Material Theme"

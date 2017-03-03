@@ -15,6 +15,11 @@ https://vuejs-templates.github.io/webpack/
 
 [gitbook](https://github.com/hzh1990/vuejs-templates)
 
+plugin
+----
+
+## html-webpack-plugin
+
 xx
 ---
 

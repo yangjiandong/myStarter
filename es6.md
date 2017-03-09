@@ -4,6 +4,16 @@ EmacScript6
 tip
 ---
 
+## [string 模板](http://localhost:8095/#docs/string)
+
+```
+$('#result').append(`
+  There are <b>${basket.count}</b> items
+   in your basket, <em>${basket.onSale}</em>
+  are on sale!
+`);
+```
+
 ## this 理解
 
 ```

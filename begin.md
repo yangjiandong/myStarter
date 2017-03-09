@@ -106,8 +106,14 @@ vue init webpack my-webpack-simple-demo
 - 模仿 douban，提供后台和前台，前台采用 vue, [github](https://github.com/jiakeqi/douban)
 ### mobile webapp
 
+### mobile app
+
 - [网易音乐](https://github.com/javaSwing/NeteaseCloudWebApp)
 - [高仿饿了吗](https://github.com/SimonZhangITer/VueDemo_Sell_Eleme)
+- [45 个页面的饿了吗](https://github.com/bailicangdu/vue2-elm)
+- [用vue开发一个猫眼电影web app](https://segmentfault.com/a/1190000008614876)
+- [Qu约](https://github.com/hzzly/xyy-vue)
+  基于vue+vue-router+vuex+axios+webpack开发的个人Demo
 
 ## vue 基本规范
 

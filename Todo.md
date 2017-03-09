@@ -1,6 +1,16 @@
 Todo
 ===
 
+todo
+---
+
+- [Ramda 函数库参考教程](http://www.ruanyifeng.com/blog/2017/03/ramda.html)
+- [Qu约](https://github.com/hzzly/xyy-vue)
+  基于vue+vue-router+vuex+axios+webpack开发的个人Demo
+- [一个用vue.js(2.0)写的直播类应用web端个人中心](https://github.com/doterlin/vue-user-center)
+  (http://www.jianshu.com/p/9b36b4c6ff60)
+- [基于vue+vue-router+vuex+axios+webpack开发的vue2.x Cnode社区](https://github.com/vincentSea/vue2.x-Cnode)
+
 2017.02.28
 ----
 
